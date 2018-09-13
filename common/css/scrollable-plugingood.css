@@ -1,0 +1,39 @@
+@charset "utf-8";
+#scroll {position:relative; clear:left; height:37.5em; overflow:hidden; width:82em; margin:auto; border-left:1em solid #000; border-right:1em solid #000;}
+#categories {width:4100px; position:absolute; top:0; height:100%;}
+.category {float:left; width:82em; height:34.6em; background:url('/images/bkgd-across.jpg') no-repeat 0 0;}
+#scrollnav {background:url(/images/scrollable-navi-bkgd-1.jpg) no-repeat 0 0; /*height:80px;*/ height:2.9em; position:absolute; top:34.6em; width:82em; left:0; /*background:#CF6*/}
+.thumbs a {background:transparent url(/images/scrollable-navi-1.jpg) no-repeat scroll -0 0; /*margin-left:1px;*/ display:block; width:117px; float:left; height:29px; cursor:pointer; /*background:#CF0;*/}
+.thumbs a.active {cursor:default !important;}
+.navi {margin-left:115px; /*_margin-left:18px;*/}
+/* CSS sprite for the navigation */
+/* #thumb0			{background-position:-0 -29px;} (Not in service)
+#thumb0:hover 	{background-position:-0 -58px;}
+#thumb0:active	{background-position:-0 -87px;}
+#thumb0.active	{background-position:-0 0 !important;} */
+
+#thumb1 {background-position:-115px -29px;} /* Home */
+#thumb1:hover {background-position:-115px -58px;}
+#thumb1:active {background-position:-115px -87px;}
+#thumb1.active {background-position:-115px 0 !important;}
+#thumb2 {background-position:-230px -29px;} /* About */
+#thumb2:hover {background-position:-230px -58px;}
+#thumb2:active {background-position:-230px -87px;}
+#thumb2.active {background-position:-230px 0 !important;}
+#thumb3 {background-position:-345px -29px;} /* Gallery */
+#thumb3:hover {background-position:-345px -58px;}
+#thumb3:active {background-position:-345px -87px;}
+#thumb3.active {background-position:-345px 0 !important;}
+#thumb4 {background-position:-460px -29px;} /* Samples */
+#thumb4:hover {background-position:-460px -58px;}
+#thumb4:active {background-position:-460px -87px;}
+#thumb4.active {background-position:-460px 0 !important;}
+#thumb5 {background-position:-575px -29px;} /* Modules */
+#thumb5:hover {background-position:-575px -58px;}
+#thumb5:active {background-position:-575px -87px;}
+#thumb5.active {background-position:-575px 0 !important;}
+
+/* #thumb6		{background-position:-690px -29px;} (Not in service)
+#thumb6:hover 	{background-position:-690px -58px;}
+#thumb6:active	{background-position:-690px -87px;}
+#thumb6.active	{background-position:-690px 0 !important;} */

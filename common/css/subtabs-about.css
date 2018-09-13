@@ -1,0 +1,22 @@
+/* root element for tabs  */
+ul.tabs {list-style:none; margin:0 !important; padding:0; /*border-bottom:1px solid #666;*/ height:24px}
+/* single tab */
+ul.tabs li {float:left; text-indent:0; padding:0; margin:0 !important; list-style-image:none !important}
+/* link inside the tab. uses a background image */
+ul.tabs a {font-size:1em; display:block; height:19px; padding-top:5px; width:160px; text-align:center; text-decoration:none; color:#0840b2; position:relative; top:1px
+background:-moz-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-webkit-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-o-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-ms-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(247, 127,6, 1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#941506', endColorstr='#d45a06', GradientType=0);
+}
+ul.tabs a:active {outline:none}
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {text-decoration:underline; color:#fff;}
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {cursor:default !important; font-weight:bold}
+/* initially all panes are hidden */ 
+.panes .pane {display:none}
+/* tab pane styling */
+.panes div {padding:10px 10px; border:1px solid #941506; border-top:0; min-height:60px; font-size:1.2em; line-height:1.6em; background-color:#000; color:#FFF; text-align:left}

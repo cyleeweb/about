@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.gradient { height: 475px; width: 100%; position: absolute; left:0px; z-index:1; background: rgb(3,4,4); background: -moz-linear-gradient(top, rgba(3,4,4,1) 0%, rgba(123,164,183,1) 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(3,4,4,1)), color-stop(100%, rgba(123,164,183,1))); background: -webkit-linear-gradient(top, rgba(3,4,4,1) 0%, rgba(123,164,183,1) 100%); background: -o-linear-gradient(top, rgba(3,4,4,1) 0%, rgba(123,164,183,1) 100%); background: -ms-linear-gradient(top, rgba(3,4,4,1) 0%, rgba(123,164,183,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#030404', endColorstr='#7ba4b7', GradientType=0); background: linear-gradient(top, rgba(3,4,4,1) 0%, rgba(123,164,183,1) 100%); }
+
+
+

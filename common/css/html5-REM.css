@@ -1,0 +1,14 @@
+/* CSS Document */
+#html5 table {border:solid #efefef; margin:3rem auto; background-color:#FFF;}
+#html5 table td {border:solid #efefef 0.1rem;}
+#html5 .txcenter {text-align:center;}
+#html5 .txleft { text-align:left;}
+#html5 .green {color:#0C6;}
+#html5 .neutral {background-color:#efefef;}
+#html5 .highlight {background-color:#d7e3ee; text-align:left;}
+#html5 .yes {margin:0 auto; width:1.0rem; height:1.0rem; background-color:#00FF00; display:block;}
+#html5 .red {color:#F00;}
+#html5 .no {margin:0 auto; width:1.0rem; height:1.0rem; background-color:#FF0000; display:block;}
+#html5 .partial {margin:0 auto; width:1.0rem; height:1.0rem; background-color:#CCCCCC; display:block;}
+#html5 .bold {font-weight:bold;}
+#html5 li {display:inline;padding:1.0rem;}

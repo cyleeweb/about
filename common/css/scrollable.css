@@ -1,0 +1,45 @@
+@charset "utf-8";
+#scroll {position:relative; clear:left; height:450px; overflow:visible; width:800px; margin:auto;}
+#categories {width:4800px; position:absolute; top:0; height:100%;}
+.category {float:left; width:800px; height:450px; text-align:center; display:inline-block;}
+.navi {left:0; height:20px; line-height:1.8em; z-index:3; position:absolute; top:421px; width:800px; text-align:center;}
+.thumbs a {display:inline-block; width:100px; height:20px; cursor:pointer; font-size:1.1em; color:#0840b2;}
+.thumbs a.active {cursor:default !important; color:#fff;} 
+/**/
+/*#bluebar {background:transparent url(/images/bluebar.jpg) repeat-x 0 0; height:30px; position:absolute; top:421px; width:100%; left:0;}*/
+/*#bluebar {background:-moz-linear-gradient(top, rgba(9, 68, 86, 1) 0%, rgba(60, 119, 137, 1) 100%); background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(9, 68, 86, 1)), color-stop(100%, rgba(60, 119, 137, 1))); background:-webkit-linear-gradient(top, rgba(9, 68, 86, 1) 0%, rgba(60, 119, 137, 1) 100%); background:-o-linear-gradient(top, rgba(9, 68, 86, 1) 0%, rgba(60, 119, 137, 1) 100%); background:-ms-linear-gradient(top, rgba(9, 68, 86, 1) 0%, rgba(60, 119, 137, 1) 100%); filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#066a70', endColorstr='#ffffff', GradientType=0); background:linear-gradient(top, rgba(9, 68, 86, 1) 0%, rgba(60, 119, 137, 1) 100%);
+height:30px; position:absolute; top:421px; width:100%; left:0;}*/
+/**/
+#bluebar {
+	background:-moz-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-webkit-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-o-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-ms-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(247, 127,6, 1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#941506', endColorstr='#d45a06', GradientType=0);
+height:20px; position:absolute; top:421px; width:100%; left:0;}
+
+/**/
+
+/* root element for tabs  */
+ul.tabs {list-style:none; margin:0 !important; padding:0; /*border-bottom:1px solid #666;*/ height:24px}
+/* single tab */
+ul.tabs li {float:left; text-indent:0; padding:0; margin:0 !important; list-style-image:none !important}
+/* link inside the tab. uses a background image */
+ul.tabs a {font-size:1em; display:block; height:19px; padding-top:5px; width:160px; text-align:center; text-decoration:none; color:#0840b2; position:relative; top:1px
+background:-moz-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-webkit-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-o-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:-ms-linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(212, 90, 6, 1) 100%);
+	background:linear-gradient(top, rgba(148, 21, 6, 1) 0%, rgba(247, 127,6, 1) 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#941506', endColorstr='#d45a06', GradientType=0);
+}
+ul.tabs a:active {}
+/* when mouse enters the tab move the background image */
+ul.tabs a:hover {text-decoration:underline; color:#fff;}
+/* active tab uses a class name "current". its highlight is also done by moving the background image. */
+ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {cursor:pointer; color:#fff;}
+/* initially all panes are hidden */ 
+.panes .pane {display:none}
+/* tab pane styling */
+.panes div {padding:10px 10px; border:1px solid #941506; border-top:0; min-height:60px; font-size:1.2em; line-height:1.6em; background-color:#000; color:#fff; text-align:left}

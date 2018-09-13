@@ -1,0 +1,21 @@
+﻿Using Sass
+
+Sass can be used in three ways: as a command-line tool, as a standalone Ruby module, and as a plugin for any Rack-enabled framework, including Ruby on Rails and Merb. The first step for all of these is to install the Sass gem:
+
+gem install sass
+If you’re using Windows, you may need to install Ruby first.
+
+To run Sass from the command line, just use
+sass input.scss output.css
+
+You can also tell Sass to watch the file and update the CSS every time the Sass file changes:
+sass --watch input.scss:output.css
+
+If you have a directory with many Sass files, you can also tell Sass to watch the entire directory:
+sass --watch app/sass:public/stylesheets
+
+Use sass --help for full documentation.
+
+Using Sass in Ruby code is very simple. After installing the Sass gem, you can use it by running require "sass" and using Sass::Engine like so:
+engine = Sass::Engine.new("#main {background-color: #0000ff}", :syntax => :scss)
+engine.render #=> "#main { background-color: #0000ff; }\n"

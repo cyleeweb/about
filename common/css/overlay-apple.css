@@ -1,0 +1,7 @@
+/* the overlayed element */
+.overlay { /* initially overlay is hidden */ display:none; /* growing background image */ /*background-image:url(/images/1px-black.gif);*/ background-image:url(/images/bar-top-350.gif); /* width after the growing animation finishes, height is automatically calculated */ width:520px; /* some padding to layout nested elements */ /*padding:0 0 0 0;*//* a little styling */ font-size:1.1em;}
+.overlay #header { color:#333; height:14px; padding-top:6px;}
+/* default close button positioned on upper right corner */
+.overlay .close { background-image:url(/images/xmark.gif); position:absolute; right:4px; top:4px; cursor:pointer; height:16px; width:16px;}
+/* container for external content. uses vertical scrollbar, if needed */
+div .overlayContent { width:498px; position:relative; /*background-image:url(/images/1px-black.gif);*/ background-image:url(/images/bkgd-gradient1.gif); /*background-color:#006699;*/margin:5px auto; padding:10px; overflow:hidden; text-align:left; border:solid 1px #666;}
