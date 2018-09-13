@@ -1,0 +1,15 @@
+https://github.com/cyleeweb/about.git
+
+git (eg: get all git commands)
+
+git clone https://github.com/cyleeweb/about.git
+git status
+git add cyleeresume.doc cyleeresume.pdf
+git status
+git commit -m "added two files: cyleeresume.doc, cyleeresume.pdf" (eg: commit files to local repository pending push)
+git push
+
+git add . (eg: all files)
+git add -A (eg: all files)
+
+esc :wq (eg: exit/quit git)

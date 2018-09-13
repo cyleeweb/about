@@ -1,0 +1,28 @@
+﻿1. SEO knowledge and experience
+I've built my SEO knowledge and experience since 2000. In the past 15 years across my Web career, I've worked with Marketing managers to implement numerous instances for SEO that covered many areas including
+Meta Keywords/Key Phrases/Description
+Back links
+Robot.txt
+Sitemap (html + xml)
+Canonical Tag
+Crawl Budget
+PageRank
+Google Webmaster Tools (i.e.: Google Search Console), etc. 
+
+>>>
+>>>
+Google Search Console (previously Google Webmaster Tools) is a no-charge web service by Google for webmasters. It allows webmasters to check indexing status and optimize visibility of their websites. As of May 20, 2015, Google rebranded Google Webmaster Tools as Google Search Console. It has tools that let the webmasters:
+
+- Submit and check a sitemap
+- Check and set the crawl rate, and view statistics about how Googlebot accesses a particular site
+- Generate and check a robots.txt file. It also helps to discover pages that are blocked in robots.txt by chance.
+- List internal and external pages that link to the site
+- Get a list of broken links for the site
+- See what keyword searches on Google led to the site being listed in the SERPs, and the click through rates of such listings. Rebranded May 20, 2015 also to 'search analytics' with extended filter possibilities for devices,search types and dates.
+- View statistics about how Google indexes the site, and if it found any errors while doing it
+- Set a preferred domain (e.g. prefer example.com over www.example.com or vice versa), which determines how the site URL is displayed in SERPs
+- Highlight to Google Search elements of structured data which are used to enrich search hit entries (released in December 2012 as Google Highlighter)
+- Receive notifications from Google for manual penalties.
+- API to add, change and delete listings and get crawl errors
+
+>>>
