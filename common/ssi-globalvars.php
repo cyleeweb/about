@@ -1,6 +1,6 @@
 <?php
-$globalTitle = "C.Y. Lee FullStack (FrontEnd Web/UI Focused) Development/Support Professional for Cloud and Marketing Initiatives";
-$globalHeader = "C.Y. Lee FullStack (FrontEnd Web/UI Focused) Development/Support Professional for Cloud and Marketing Initiatives";
+$globalTitle = "C.Y. Lee Fullstack (Frontend Web/UI Focused) Development/Support Professional for Cloud and Marketing Initiatives";
+$globalHeader = "C.Y. Lee Fullstack (Frontend Web/UI Focused) Development/Support Professional for Cloud and Marketing Initiatives";
 // NavTop & NavBot
 $navHome = "Home";
 $navAbout = "About";

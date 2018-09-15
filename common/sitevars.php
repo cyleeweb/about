@@ -1,6 +1,6 @@
 <?php
-$siteTitle = "C.Y. Lee FullStack/FrontEnd Web & UI Developer for Product & Marketing Initiatives";
-$siteHeader = "C.Y. Lee FullStack/FrontEnd Web & UI Developer for Product & Marketing Initiatives";
+$siteTitle = "C.Y. Lee Fullstack/Frontend Web & UI Focused Developer for Cloud & Marketing Initiatives";
+$siteHeader = "C.Y. Lee Fullstack/Frontend Web & UI Focused Developer for Cloud & Marketing Initiatives";
 // NavTop & NavBot
 $navHome = "Home";
 $navAbout = "About";
@@ -14,12 +14,12 @@ $sectitleHome = "Home";
 $headlineHome = "Slide animation is on... Toggle left buttons for theme and dimmer changes.";
 $bylineHome = "Modern 16:9 Widescreen Web with Tap, Swipe & Scroll User Experience";
 // About
-$sectitleAbout = "About";
+$sectitleAbout = "About & What I Do Best";
 $bylineAbout = "Code the Web for High-Quality & Scalable Deliveries";
-$aboutTab1 = "Based upon master design comps and wireframes, I work closely with lead groups to slice/sprite and optimize graphics, and style and build core and clean HTML(5) + CSS(3) templates with jQuery/Ajax/Javascript for further implementation into the Web architecture.";
-$aboutTab2 = "Website assets (images, scripts, styles, components, etc.) can be optimized, merged, minified with delay loading as needed to reduce page weight, element calls, dom parsing for faster rendering. Additionally, I can use various tools and methods including better semantic markup to improve page/site performance.";
-$aboutTab3 = "Whether the sites are driven in Apache, Tomcat, IIS, running HTML, PHP, ASP, .NET, JSP, or via CMS such as Teamsite, Tridion, Ektron, UCM, Crafter/Alfresco and more, I can work with all core groups to convert and implement materials from stakeholders to HTML(5)-CSS(3)-jQuery compliant web pages with functions.";
-$aboutTab4 = "The sites may be driven in various environments. I can work with all front/back-end groups to seamlessly tackle tickets for content updating, function adding, dynamic data-binding in all areas including headers, breadcrumbs, footers, meta, link-checking, contents, and more.";
+$aboutTab1 = "Based upon master design wireframes, comps & annotations, I work closely with Des/UX/Backend/QA groups to build & style clean & scalable HTML(5) + CSS(3) + jQuery/Ajax/Javascript core prototypes, templates and modules for further integration & implementation into your Web architectures.";
+$aboutTab2 = "The sites/apps may be driven in various environments. I can work with all front/back-end groups to seamlessly tackle tasks for content updating, function analyzing & creating, dynamic data-fetching-binding & tracking in all HTML areas & elements including meta, headers, breadcrumbs, navigation, body, footers, styles, scripts more.";
+$aboutTab3 = "Web site & application assets (images, scripts, styles, components, etc.) can be optimized, merged, minified with delay loading as needed to reduce page weight, element calls, dom parsing for faster rendering. Additionally, I use various tools & methods including better semantic markup to improve page performance for sites/applications.";
+$aboutTab4 = "Whether the sites/apps are architected in Apache, Tomcat, IIS, JAVA, running HTML, PHP, ASP, .NET, JSP, or via CMS such as Teamsite, WordPress, Tridion, Ektron, UCM, Crafter/Alfresco, & other stacks that involve various functional groups including Marketing, Design, Product, UI, Engineering, QA, and IT, I am trained professionally with extensive experience in managing multitasking work flows to achieve high-quality deliverables on-time.";
 // Gallery
 $sectitleGallery = "Image Gallery";
 $bylineGalleries = "Powered by Photography, Imaging, jQuery, Ajax and CSS";
