@@ -107,8 +107,6 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 
-	var H = $(window).height();
-
 	$('#ngboot').fadeIn(2000);
 
 	$("html, body").animate({
@@ -117,35 +115,24 @@ $(document).ready(function(){
 	//return false;
 
 	// ScrollTop 
-
 	$(window).scroll(function() {
+        var H = $(window).height();
+
 		if ($(document).scrollTop() > H*0.2) {
 			$('#about').fadeIn(2000);
-		} 
-	});
-
-	$(window).scroll(function() {
-		if ($(document).scrollTop() > H*0.4) {
-			$('#recommend').fadeIn(2000);
-		} 
-	});
-
-	$(window).scroll(function() {
-		if ($(document).scrollTop() > H*0.8) {
-		  $('#galleries').fadeIn(2000);
-		} 
-	});
-
-	$(window).scroll(function() {
-		if ($(document).scrollTop() > H*1.6) {
-		  $('#samples').fadeIn(2000);
-		} 
-	});
-
-	$(window).scroll(function() {
-		if ($(document).scrollTop() > H*3.2) {
-		  $('#contact').fadeIn(2000);
-		} 
+		}
+        if ($(document).scrollTop() > H*0.4) {
+            $('#recommend').fadeIn(2000);
+        } if 
+        $(document).scrollTop() > H*0.8) {
+          $('#galleries').fadeIn(2000);
+        }
+        if ($(document).scrollTop() > H*1.6) {
+          $('#samples').fadeIn(2000);
+        }
+        if ($(document).scrollTop() > H*3.2) {
+          $('#contact').fadeIn(2000);
+        } 
 	});
 
 	// For smooth scrolling to the anchor id position:
