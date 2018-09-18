@@ -123,8 +123,8 @@ $(document).ready(function(){
 		}
         if ($(document).scrollTop() > H*0.4) {
             $('#recommend').fadeIn(2000);
-        } if 
-        $(document).scrollTop() > H*0.8) {
+        }
+        if ($(document).scrollTop() > H*0.8) {
           $('#galleries').fadeIn(2000);
         }
         if ($(document).scrollTop() > H*1.6) {
