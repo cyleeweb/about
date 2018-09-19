@@ -1,4 +1,4 @@
-<div id="samples" class="container-fluid">
+<div id="samples" class="container-fluid track">
 	<!-- Header -->
 	<header class="white">
 		<div class="title fontPoiretOne28 fw-bold" ng-bind="siteVars.titleSamples"></div>

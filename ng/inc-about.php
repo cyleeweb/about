@@ -1,4 +1,4 @@
-<div id="about" class="container">
+<div id="about" class="container track">
 	<!-- Header -->
 	<header class="white">
 		<div class="title fontPoiretOne28 fw-bold" ng-bind="siteVars.titleAbout"></div>

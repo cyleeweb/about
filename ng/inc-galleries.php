@@ -1,4 +1,4 @@
-<div id="galleries" class="container">
+<div id="galleries" class="container track">
 	<!-- Header -->
 	<header class="white">
 		<div class="title fontPoiretOne28 fw-bold" ng-bind="siteVars.titleGalleries"></div>
