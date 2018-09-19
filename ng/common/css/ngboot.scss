@@ -254,7 +254,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* Recommend */	
-	#recommend {height:inherit; display:none;
+	#recommend {height:inherit;
 		#recommend-main {margin-bottom:3rem; padding:2rem; background:transparent; /*border:#111 dotted 1px;*/ /*@include border-radius(1rem);*/ 
 			.refs {margin:1rem auto; cursor:pointer;
 				.blocks {padding:1rem; min-height:10rem;
@@ -269,7 +269,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* Gallleries */
-	#galleries {height:inherit; display:none;
+	#galleries {height:inherit;
 		#galleries-main {margin-bottom:3rem; /*min-height:82rem;*/ /*background:$clr-111 url(/images/bigback.png) no-repeat center; background-size:cover;*/ padding:2rem 0 4rem 0; color:#e0e0e0; text-align:center; /*border:#111 dotted 1px;*/ /*@include border-radius(1rem);*/
 			#galleries-nav {margin:0 auto; color:$clr-e0e0e0; text-align: center; padding:2rem; cursor: pointer;
 				img {border:$clr-e0e0e0 solid .2rem; margin: 2rem;}
@@ -292,7 +292,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 /* /Glleries */
 
 /* Samples */
-	#samples {height:inherit; display:none;
+	#samples {height:inherit;
 		#samples-main {margin-bottom:3rem;
 			.blocks {margin:1rem auto; height:25rem; padding-top:2rem;
 				span {display:block; text-shadow:#000 0.1rem 0.1rem 0.1rem;}
@@ -303,7 +303,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
     
 /* Contact */
-	#contact {height:inherit; display:none;
+	#contact {height:inherit;
 		#contact-main {
 			form {margin:2rem auto; max-width:50rem; padding:1rem 5rem; text-align:left; background:$clr-fff; border:$clr-0c3b48 solid 4px; /*@include border-radius(1rem);*/}
 			form div {margin:1rem auto;}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+<title>UICore Flex Base</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<link rel="stylesheet" type="text/css" href="/common/css/reset-new.css" />
+<link href="../common/css/fonts/fonts.css" type="text/css" rel="stylesheet" />
+<link href="./css/base.css" type="text/css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+</head>
+
+<body>
+<div id="main1">
+    <h2>UICore Flex Base & Grid</h2>
+    <div class="rowsflex">
+        <div class="cols">
+        1. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </div>
+        <div class="cols">
+        2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </div>
+        <div class="cols">
+        3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        <div class="cols">
+        4. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+        </div>  
+        <div class="cols">
+        5. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div> 
+    </div>
+</div>
+
+<div id="main2">
+    <div class="rowsflex">
+        <div class="cols" style="background-color:coral;">A</div>
+        <div class="cols" style="background-color:lightblue;">B</div>
+        <div class="cols" style="background-color:khaki;">C</div>
+        <div class="cols" style="background-color:pink;">D</div>
+        <div class="cols" style="background-color:lightgrey;">E</div>
+        <div class="cols" style="background-color:lightgreen;">F</div>
+
+        <div class="cols" style="background-color:red;">G</div>
+        <div class="cols" style="background-color:green;">H</div>
+        <div class="cols" style="background-color:blue;">I</div>
+        <div class="cols" style="background-color:cyan;">J</div>
+        <div class="cols" style="background-color:magenta;">K</div>
+        <div class="cols" style="background-color:yellow;">L</div>
+
+        <div class="cols" style="background-color:#333;">M</div>
+        <div class="cols" style="background-color:666;">N</div>
+        <div class="cols" style="background-color:khaki;">O</div>
+        <div class="cols" style="background-color:pink;">P</div>
+        <div class="cols" style="background-color:lightgrey;">Q</div>
+        <div class="cols" style="background-color:lightgreen;">R</div>
+    </div>
+</div>
+
+<div id="main3">
+    <div class="rowsflex">
+        <div class="cols" style="background-color:coral;">A</div>
+        <div class="cols" style="background-color:lightblue;">B</div>
+        <div class="cols" style="background-color:khaki;">C</div>
+        <div class="cols" style="background-color:pink;">D</div>
+        <div class="cols" style="background-color:lightgrey;">E</div>
+        <div class="cols" style="background-color:lightgreen;">F</div>
+    </div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+    // Window to top onload.
+    window.scrollTo(0,0);
+});    
+</script>
+
+<!-- Responsive Media Queries -->
+<style>
+@media screen and (max-width:1024px) {
+        #main1 .rowsflex, #main2 .rows {
+            flex-direction:column;
+            -webkit-flex-direction:column;
+            -ms-flex-direction:column;
+        }
+        #main2 .rowsflex .cols {width:80%; margin:0 auto;}   
+}
+</style>
+
+<!-- For Ref Only: Using JS function to assign flex:1, -ms-flex:1, -ewebkit-flex:1 to child divs for sane height  -->
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    var y = x.getElementsByTagName("DIV");
+    var i = 0;
+    for (i; i < y.length; i++) {
+        y[i].style.msFlex = "1"; // IE10
+        y[i].style.WebkitFlex = "1"; // Safari 6.1+
+        y[i].style.flex = "1";
+    }
+}
+</script>
+
+</body>
+
+</html>
+
+<!--
+
+Terminology[edit]
+Following are a few terms associated with the flex layout model
+
+Flex container[edit]
+Parent element that holds all flex items. Using the CSS display property, the container can be defined as either flex or inline-flex.
+
+Flex item[edit]
+Any child element held within the flex container is considered a flex item. Any text within the container element is wrapped in an unknown flex item.
+
+Axes[edit]
+Each flex box contains two axes: the main and cross axes. The main axis is the axis on which the items align with each other. The cross axis is perpendicular to the main axis.
+
+Flex-direction
+Establishes main axis. Optional arguments: row (default), row-reverse, column, column-reverse.
+
+Justify-content
+Determines how content gets placed on the main axis on the current line. Optional arguments: left, right, center, space-between, space-around.
+
+Align-items
+Determines the default for how flex items get placed on the cross axis on each line.
+
+Align-content
+Determines the default for how cross axis lines are aligned.
+
+Align-self
+Determines how a single item is placed along the cross axis. This overrides any defaults set by align-items.
+
+Directions[edit]
+The main-start/main-end sides determine where to start placing flex items within the flex container, starting from the main-start end and going to the main-end end. The cross-start/cross-end sides determine where flex lines get filled with flex items from cross-start to cross-end.
+
+Order
+Places elements in groups and determines which order they are to be placed in within the container.
+
+Flex-flow
+
+Shorthands flex-direction and flex-wrap to place the flex content.
+
+Lines[edit]
+Flex items can either be placed on a singular line or on multiple lines as defined by the flex-wrap property, which controls both the direction of the cross axis and how lines stack within the container.
+
+Dimensions[edit]
+Main size and cross size are essentially the height and width of the flex container, each dealing with the main and cross axes respectively.
+
+Designate a flex box[edit]
+Designating an element as a flex element is relatively easy. All that is necessary is to set the display property to either flex or inline-flex as follows:
+
+display: flex;
+Or:
+display: inline-flex;
+
+By setting the display to one of the two values above, an element becomes a flex container and its children flex items. Setting the display to flex makes the container a block-level element, while setting the display to inline-flex makes the container an inline-level element.[5]
+
+Align to center[edit]
+One of flexbox's advantages is the ability to easily align items within the container to the center of a page, both vertically and horizontally.
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+-->

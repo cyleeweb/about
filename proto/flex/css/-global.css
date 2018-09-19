@@ -1,0 +1,154 @@
+html {
+  font: 62.5%/normal 'Note Sans', sans-serif;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box; }
+
+body {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  font-size: 1.4rem; }
+
+/**/
+h1 {
+  font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+h2 {
+  font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+h3 {
+  font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+h4 {
+  font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+h5 {
+  font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+h6 {
+  font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+/* Mobile First Responsive Media Queries */
+@media all and (min-width: 320px) and (max-width: 575px) {
+  body {
+    font-size: 1.2rem; }
+
+  h1 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 200%; } }
+@media all and (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.4rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 250%; } }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.6rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 300%; } }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.8rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.0rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 350%; } }
+@media all and (min-width: 1200px) and (max-width: 1920px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 400%; } }

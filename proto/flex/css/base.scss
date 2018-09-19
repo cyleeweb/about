@@ -1,0 +1,84 @@
+/* BGN import *.scss */
+@import "-global";
+/* EOD import *.scss */
+
+/********************************************************************************/
+#main1 {width:100%; margin:4rem auto; padding:1rem; outline:#069 solid 1rem;
+    /* flex parent container */
+    .rowsflex {width:100%; padding:1rem; display:flex; outline:#f00 solid 0.2rem;
+    /* flex-direction: row-reverse;*/
+    /* flex Vertical Alignment Properties (NOT for any in div text alignment) */
+        align-items:flex-end; 
+        /*
+        stretch         Default. Items are stretched to fit the container
+        center          Items are positioned at the center of the container
+        flex-start      Items are positioned at the beginning of the container
+        flex-end        Items are positioned at the end of the container
+        baseline        Items are positioned at the baseline of the container
+        initial         Sets this property to its default value. Read about initial
+        inherit         Inherits this property from its parent element.
+        */
+
+        .cols {height:auto; padding:2rem; outline:#0f0 solid 0.1rem;
+            flex:1; /* all child divs have equal height */}
+        .cols:nth-of-type(1) {flex-grow: 1;}
+        .cols:nth-of-type(2) {flex-grow: 3;} /* x3 width */
+        .cols:nth-of-type(3) {flex-grow: 1;}
+        .cols:nth-of-type(4) {flex-grow: 4;} /* x4 width */
+        .cols:nth-of-type(5) {flex-basis: 30rem;} /* width */
+    }
+}
+
+#main2 {width:80%; margin:4rem auto; padding:1rem; outline:#069 solid 1rem;
+    /* flex parent container */
+    .rowsflex {width:100%; padding:1rem; display:flex; outline:#f00 solid 0.2rem;
+        flex-flow: row wrap; /* shorthand property for "flex-direction" and "flex-wrap" */
+        justify-content:center;
+        /* flex-direction: row-reverse; */
+        /*
+        flex-start      Default value. Items are positioned at the beginning of the container
+        flex-end        Items are positioned at the end of the container
+        center          Items are positioned at the center of the container
+        space-between   Items are positioned with space between the lines
+        space-around    Items are positioned with space before, between, and after the lines
+        initial         Sets this property to its default value. Read about initial
+        inherit
+        */
+        .cols {width: 20rem; height: 20rem; outline:#aaa solid 0.1rem;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+    }
+}
+
+/*
+#main2 .rows .cols:nth-child(1), #main2 .rows .cols:nth-last-child(1) {
+    background: black !important;
+    margin: 0 auto;
+}
+*/
+
+#main3 {width:100vw; margin:4rem auto; padding:1rem; outline:#654 solid 2rem;
+    /* flex parent container */
+    .rowsflex {width:100%; padding:1rem; outline:#f00 solid 0.2rem;
+        display:flex; 
+        flex-flow: row wrap; /* shorthand property for "flex-direction" and "flex-wrap" */
+        /* flex-direction: row-reverse; */
+        justify-content:center;
+
+        .cols {width: 25%; height: 20rem; outline:#aaa solid 0.1rem;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+        }
+    }
+}
+
+/* Responsive Media Queries */
+
+@media screen and (max-width: 1000px) and (min-width: 320px) {
+        #main1 .rowsflex, #main2 .rowsflex {flex-direction:column;}
+        #main2 .rowsflex .cols {width:80vw; margin:0 auto;}  
+        #main3 .rowsflex .cols {width:80vw; margin:0 auto;} 
+}

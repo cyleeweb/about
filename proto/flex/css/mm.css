@@ -1,0 +1,232 @@
+/* BGN import *.scss */
+html {
+  font: 62.5%/normal 'Note Sans', sans-serif;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box; }
+
+body {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  font-size: 1.4rem; }
+
+/**/
+h1 {
+  font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+h2 {
+  font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+h3 {
+  font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+h4 {
+  font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+h5 {
+  font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+h6 {
+  font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+/* Mobile First Responsive Media Queries */
+@media all and (min-width: 320px) and (max-width: 575px) {
+  body {
+    font-size: 1.2rem; }
+
+  h1 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 200%; } }
+@media all and (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.4rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 250%; } }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.6rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 300%; } }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.8rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.0rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 350%; } }
+@media all and (min-width: 1200px) and (max-width: 1920px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 400%; } }
+/* EOD import *.scss */
+/********************************************************************************/
+#mobile-first {
+  width: 96%;
+  margin: 1rem auto;
+  padding: 1rem;
+  outline: #069 solid 1rem;
+  /* flex parent container */
+  /* Mobile First Responsive Media Queries */ }
+  #mobile-first .rowsflex {
+    width: 100%;
+    padding: 1rem;
+    outline: #f00 solid 0.2rem;
+    display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    /* shorthand property for "flex-direction" and "flex-wrap" */
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    /*
+    flex-start      Default value. Items are positioned at the beginning of the container
+    flex-end        Items are positioned at the end of the container
+    center  Items are positioned at the center of the container
+    space-between   Items are positioned with space between the lines
+    space-around    Items are positioned with space before, between, and after the lines
+    initial Sets this property to its default value. Read about initial
+    inherit
+    */ }
+    #mobile-first .rowsflex .cols:nth-child(1), #mobile-first .rowsflex .cols:nth-last-child(1) {
+      background: black !important; }
+    #mobile-first .rowsflex .cols {
+      height: 20rem;
+      line-height: 20rem;
+      text-align: center;
+      margin: 0.4rem;
+      outline: #aaa solid 0.1rem; }
+  @media screen and (min-width: 1200px) and (max-width: 1920px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 48%; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 24%; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 32%; } }
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 45%; } }
+  @media screen and (min-width: 320px) and (max-width: 575px) {
+    #mobile-first .rowsflex {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      #mobile-first .rowsflex .cols {
+        width: 90%;
+        margin: 0.4rem auto; } }

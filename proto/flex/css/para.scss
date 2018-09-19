@@ -1,0 +1,16 @@
+
+/* BGN import *.scss */
+@import "-global";
+/* EOD import *.scss */
+
+/********************************************************************************/
+#local {width:100%; height:100%; margin:2rem auto; background:#9cf; padding:5rem; display:flex; flex-direction:column; /* flex-wrap:wrap; */ }
+.row {outline:#f00 solid 1px; padding:5rem 0; height:100vh;}
+.row img {width:auto;}
+#row1 {outline:#f00 solid 1px; opacity:1; background:#000;}
+#row2 {outline:#f00 solid 1px; opacity:1;}
+#row3 {outline:#f00 solid 1px; opacity:1;}
+#row4 {outline:#f00 solid 1px; opacity:1;}
+#row5 {outline:#f00 solid 1px; opacity:1;}
+/* EOD */
+

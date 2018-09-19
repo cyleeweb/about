@@ -551,7 +551,6 @@ header#global {
         color: white; }
   #ngboot #recommend {
     height: inherit;
-    display: none;
     /*#recommend-main:hover {border:$clr-777 solid 1px;}*/ }
     #ngboot #recommend #recommend-main {
       margin-bottom: 3rem;
@@ -581,8 +580,7 @@ header#global {
               /*display:none;*/
               /*background:url(/images/x-small.jpg) no-repeat 22rem 0.1rem;*/ }
   #ngboot #galleries {
-    height: inherit;
-    display: none; }
+    height: inherit; }
     #ngboot #galleries #galleries-main {
       margin-bottom: 3rem;
       /*min-height:82rem;*/
@@ -686,8 +684,7 @@ header#global {
         font-weight: bold;
         color: #6ff; }
   #ngboot #samples {
-    height: inherit;
-    display: none; }
+    height: inherit; }
     #ngboot #samples #samples-main {
       margin-bottom: 3rem; }
       #ngboot #samples #samples-main .blocks {
@@ -702,8 +699,7 @@ header#global {
         #ngboot #samples #samples-main .blocks img:hover {
           outline: #006699 solid 4px; }
   #ngboot #contact {
-    height: inherit;
-    display: none; }
+    height: inherit; }
     #ngboot #contact #contact-main form {
       margin: 2rem auto;
       max-width: 50rem;

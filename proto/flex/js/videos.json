@@ -1,0 +1,21 @@
+{
+	"Vimeo": "vm1",
+	"VimeoFrame": "<iframe src='https://player.vimeo.com/video/52120891?autoplay=0&title=1&byline=0&portrait=0&api=1&color=8dc63f' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>", 
+
+	"Youtube": "yt1",
+	"YoutubeFrame": "<iframe src='https://www.youtube.com/embed/M7lc1UVf-VE?autoplay=0&origin=http://example.com' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>",
+
+	"Brightcove": "bc1",
+	"BrightcoveFrame": "<iframe src='https://players.brightcove.net/921483702001/default_default/index.html?videoId=4570583963001' frameborder='0' allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe>",
+
+	"YoutubeAPI":
+		[
+			{
+			"Eid": "herovideo",
+			"Vid": "bqh-5yew2yQ"
+			}
+		]
+
+}
+
+

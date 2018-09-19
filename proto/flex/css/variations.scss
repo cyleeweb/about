@@ -1,0 +1,82 @@
+/* BGN import *.scss */
+@import "-global";
+/* EOD import *.scss */
+    
+
+/* .flexcont = flex container - parent */
+/* .flexitem = flex items - children */
+
+.component {width:90%; height:100%; background:#fff; margin:2% auto; text-align:center; 
+    div.varA, div.varB, div.varC, div.varD {margin:2rem auto;}
+    .flexcont-row {display:flex; flex-flow:row wrap;}
+    .flexcont-row-reverse {display:flex; flex-flow:row-reverse wrap;}
+    .flexcont-col {display:flex; flex-flow:column wrap;}
+    .flexcont-col-reverse {display:flex; flex-flow:column-reverse wrap;}
+    
+    .varA {height:10rem; /* parent container */
+        .A {flex:1; padding:1rem;
+            &.A1 {font-size:1.6rem; font-weight:200; color:#159; display:flex; align-items:flex-start;} /* child item */
+            &.A2 {font-size:2.0rem; font-weight:500; color:#951; display:flex; align-items:center;} /* child item */
+            &.A3 {font-size:2.4rem; font-weight:800; color:#519; display:flex; align-items:flex-end;} /* child item */
+        }
+    }
+    
+    .varB {height:10rem; /* parent container */
+        .B {flex:1; padding:1rem;
+            &.B1 {font-size:1.6rem; font-weight:200; color:#123; display:flex; align-items:flex-start;} /* child item */
+            &.B2 {font-size:2.0rem; font-weight:500; color:#456; display:flex; align-items:center;} /* child item */
+            &.B3 {font-size:2.4rem; font-weight:800; color:#789; display:flex; align-items:flex-end;} /* child item */
+        }
+    }
+    
+    .varC {height:10rem; /* parent container */
+        .C {flex:1; padding:1rem;
+            &.C1 {font-size:1.6rem; font-weight:200; color:#369; display:flex; align-items:center; justify-content:flex-start;} /* child item */
+            &.C2 {font-size:2.0rem; font-weight:500; color:#963; display:flex; align-items:center; justify-content:center;} /* child item */
+            &.C3 {font-size:2.4rem; font-weight:800; color:#693; display:flex; align-items:center; justify-content:flex-end;} /* child item */
+        }
+    }
+    
+    .varD {height:10rem; /* parent container */
+        .D {flex:1; padding:1rem; /* parent container */
+            &.D1 {font-size:1.6rem; font-weight:200; color:#123; display:flex; align-items:center; justify-content:flex-start;} /* child item */
+            &.D2 {font-size:2.0rem; font-weight:500; color:#456; display:flex; align-items:center; justify-content:center;} /* child item */
+            &.D3 {font-size:2.4rem; font-weight:800; color:#789; display:flex; align-items:center; justify-content:flex-end;} /* child item */
+        }
+    }
+    
+    @media screen and (min-width:320px) {
+        .A {outline:#f00 solid 0.2rem;}
+        .B {outline:#00f solid 0.2rem;}
+        .C {outline:#f00 solid 0.2rem;}
+        .D {outline:#f00 solid 0.2rem;}
+    } 
+    
+    @media screen and (min-width:576px) {
+        .A {outline:#f00 solid 0.4rem;}
+        .B {outline:#00f solid 0.4rem;}
+        .C {outline:#0f0 solid 0.4rem;}
+        .D {outline:#0ff solid 0.4rem;}
+    }
+    
+    @media screen and (min-width:768px) {
+        .A {outline:#f00 solid 0.6rem;}
+        .B {outline:#00f solid 0.6rem;}
+        .C {outline:#0f0 solid 0.6rem;}
+        .D {outline:#0ff solid 0.6rem;}
+    }
+    
+    @media screen and (min-width:1024px) {
+        .A {outline:#f00 solid 0.8rem;}
+        .B {outline:#00f solid 0.8rem;}
+        .C {outline:#0f0 solid 0.8rem;}
+        .D {outline:#0ff solid 0.8rem;}
+    }
+    
+    @media screen and (min-width:1280px) {
+        .A {outline:#f00 solid 1rem;}
+        .B {outline:#00f solid 1rem;}
+        .C {outline:#0f0 solid 1rem;}
+        .D {outline:#0ff solid 1rem;}
+    }
+}

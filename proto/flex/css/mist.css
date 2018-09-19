@@ -1,0 +1,561 @@
+/* BGN import *.scss */
+html {
+  font: 62.5%/normal 'Note Sans', sans-serif;
+  min-height: 100%;
+  position: relative;
+  box-sizing: border-box; }
+
+body {
+  display: block;
+  width: 100vw;
+  text-align: center;
+  color: #333;
+  background: #fff;
+  font-size: 1.4rem; }
+
+/**/
+h1 {
+  font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+h2 {
+  font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+h3 {
+  font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+h4 {
+  font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+h5 {
+  font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+h6 {
+  font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+/* Mobile First Responsive Media Queries */
+@media all and (min-width: 320px) and (max-width: 575px) {
+  body {
+    font-size: 1.2rem; }
+
+  h1 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 200%; } }
+@media all and (min-width: 576px) and (max-width: 767px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.4rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.2rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 250%; } }
+@media all and (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.6rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 300%; } }
+@media all and (min-width: 992px) and (max-width: 1199px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 3.8rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.0rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.6rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.2rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 1.8rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.4rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 350%; } }
+@media all and (min-width: 1200px) and (max-width: 1920px) {
+  body {
+    font-size: 1.4rem; }
+
+  h1 {
+    font: bold 4.0rem/normal 'Note Sans', sans-serif; }
+
+  h2 {
+    font: bold 3.2rem/normal 'Note Sans', sans-serif; }
+
+  h3 {
+    font: bold 2.8rem/normal 'Note Sans', sans-serif; }
+
+  h4 {
+    font: bold 2.4rem/normal 'Note Sans', sans-serif; }
+
+  h5 {
+    font: bold 2.0rem/normal 'Note Sans', sans-serif; }
+
+  h6 {
+    font: bold 1.6rem/normal 'Note Sans', sans-serif; }
+
+  span.vary {
+    font-size: 400%; } }
+/* EOD import *.scss */
+/********************************************************************************/
+/* skyscreen */
+#skyscreen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  z-index: 999;
+  text-align: center; }
+  #skyscreen .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ff0000;
+    -moz-opacity: 0.50;
+    opacity: 0.50;
+    display: inherit;
+    cursor: pointer; }
+  #skyscreen .vframe {
+    position: relative;
+    margin: 5% auto;
+    padding: 2rem;
+    text-align: center;
+    display: inline-block;
+    border: #006699 solid 10px;
+    background-color: #c0f060;
+    /* Mobile First Responsive Media Queries*/ }
+    #skyscreen .vframe .xclose {
+      position: absolute;
+      top: -1.5rem;
+      right: -1.5rem;
+      cursor: pointer; }
+    #skyscreen .vframe .vids {
+      outline: #789 dotted 4px;
+      /* iframe {width:60vw; height:33.75vw;} iframe's width and height is such a beauty */ }
+    @media all and (min-width: 320px) and (max-width: 575px) {
+      #skyscreen .vframe {
+        /* height:45vw; */ }
+        #skyscreen .vframe iframe {
+          width: 70vw;
+          height: calc(70vw * 9/16); } }
+    @media all and (min-width: 576px) and (max-width: 767px) {
+      #skyscreen .vframe {
+        /* height:45vw; */ }
+        #skyscreen .vframe iframe {
+          width: 70vw;
+          height: calc(70vw * 9/16); } }
+    @media all and (min-width: 768px) and (max-width: 991px) {
+      #skyscreen .vframe {
+        /* height:39.375vw; */ }
+        #skyscreen .vframe iframe {
+          width: 70vw;
+          height: calc(70vw * 9/16); } }
+    @media all and (min-width: 992px) and (max-width: 1199px) {
+      #skyscreen .vframe {
+        /* height:33.75vw; */ }
+        #skyscreen .vframe iframe {
+          width: 60vw;
+          height: calc(60vw * 9/16); } }
+    @media all and (min-width: 1200px) and (max-width: 3840px) {
+      #skyscreen .vframe {
+        /* height:33.75vw;} */ }
+        #skyscreen .vframe iframe {
+          width: 60vw;
+          height: calc(60vw * 9/16); } }
+
+/**/
+.launch,
+.domcount {
+  cursor: pointer; }
+
+.launch:hover,
+.domcount:hover {
+  outline: #f00 solid 2px; }
+
+/**/
+#mobile-first {
+  width: 100vw;
+  margin: 1rem auto;
+  padding: 1rem;
+  outline: #069 solid 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* Floating element */
+  /* flex parent container */
+  /* Mobile First Responsive Media Queries*/ }
+  #mobile-first #floater {
+    background: #000;
+    position: fixed;
+    display: none;
+    cursor: pointer;
+    z-index: 99; }
+    #mobile-first #floater.long {
+      left: -20rem;
+      top: 2rem;
+      width: 20rem;
+      height: auto;
+      padding: 2rem;
+      text-align: left; }
+      #mobile-first #floater.long ul {
+        display: flex;
+        flex-flow: column; }
+        #mobile-first #floater.long ul li {
+          margin: 0.5rem auto;
+          padding: 1rem;
+          background: #eee;
+          min-width: 6rem;
+          width: 100%; }
+    #mobile-first #floater.short {
+      left: -8rem;
+      top: 2rem;
+      width: 8rem;
+      height: 8rem;
+      padding: 2rem; }
+      #mobile-first #floater.short ul {
+        display: none; }
+        #mobile-first #floater.short ul li {
+          margin: 1rem auto;
+          padding: 1rem;
+          background: #eee;
+          min-width: 6rem;
+          width: 100%; }
+  #mobile-first #floater:hover {
+    /* outline:#0f0 dotted 1px; -webkit-box-shadow: 0px 0px 50px 10px rgba(200,250,250,1); -moz-box-shadow: 0px 0px 50px 10px rgba(200,250,250,1); box-shadow: 0px 0px 50px 10px rgba(200,250,250,1);*/ }
+  #mobile-first .rowsflex {
+    width: 100%;
+    padding: 1rem;
+    /* outline:#f00 solid 0.2rem; */
+    display: flex;
+    -webkit-display: flex;
+    -ms-display: flex;
+    /* shorthand property for "flex-direction" and "flex-wrap" */
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    /* The default size of an element before the remaining space is distributed. It can be a length (e.g. 20%, 5rem, etc.) or a keyword like "auto". */
+    flex-basis: auto;
+    /* All items to be 100% width, via flex-basis */
+    /* > * {flex: 1 100%;} */
+    /* flex-direction: row-reverse;*/
+    /* Main Axis */
+    justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    /*
+    flex-start      Default value. Items are positioned at the beginning of the container
+    flex-end        Items are positioned at the end of the container
+    center          Items are positioned at the center of the container
+    space-between   Items are positioned with space between the lines
+    space-around    Items are positioned with space before, between, and after the lines
+    initial Sets this property to its default value. Read about initial
+    inherit
+    */
+    align-content: center;
+    -webkit-align-content: center;
+    -ms-align-content: center; }
+    #mobile-first .rowsflex .hero {
+      width: 100%;
+      text-align: center;
+      margin: 0.4rem;
+      padding: 2vw;
+      outline: #000 solid 0.2rem;
+      background: #000 url("/images/bkgd-across-800x450-sepia.jpg") no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      /**/
+      /* height:33.75vw; */ }
+      #mobile-first .rowsflex .hero span {
+        display: block;
+        font-size: 300%;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 0.2rem 0.2rem 0.4rem #000000; }
+      #mobile-first .rowsflex .hero p {
+        padding: 2rem; }
+      #mobile-first .rowsflex .hero img {
+        width: 100%; }
+      #mobile-first .rowsflex .hero iframe#herovideo.hero-video {
+        outline: #f00 solid 10px;
+        margin: 3rem auto;
+        width: 60vw;
+        height: calc(60vw * 9/16); }
+    #mobile-first .rowsflex .cols {
+      height: auto;
+      width: 100%;
+      text-align: center;
+      margin: 0.4rem auto;
+      outline: #aaa solid 0.1rem;
+      padding: 2rem 0;
+      /* All flex items share equal length(width). */
+      /* flex:1; -webkit-flex:1; -ms-flex:1; */
+      /* flex: none ;  | flex-grow | flex-shrink' | flex-basis */
+      flex: 0 1 auto;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      /* margin:auto is used in flex items but it might afect the same-height to each sibling of flex item */
+      /* margin: auto; */
+      /**/
+      /*  +cylee */
+      /*  -cylee */ }
+      #mobile-first .rowsflex .cols span {
+        display: block;
+        color: #fff;
+        font-weight: bold;
+        text-shadow: 0.2rem 0.2rem 0.4rem #000; }
+      #mobile-first .rowsflex .cols p {
+        padding: 2rem; }
+      #mobile-first .rowsflex .cols img {
+        width: auto;
+        max-width: 100%; }
+      #mobile-first .rowsflex .cols img.pointer {
+        cursor: pointer; }
+      #mobile-first .rowsflex .cols img.pointer:hover {
+        outline: #ff0 solid 2px; }
+      #mobile-first .rowsflex .cols .nextsib {
+        align-self: stretch;
+        padding: 4rem;
+        bottom: -4rem;
+        display: none; }
+      #mobile-first .rowsflex .cols.center {
+        display: flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center; }
+        #mobile-first .rowsflex .cols.center img {
+          /* align-self:center; */ }
+      #mobile-first .rowsflex .cols.equal {
+        display: flex;
+        outline: #f00 solid 0.2rem;
+        align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center; }
+        #mobile-first .rowsflex .cols.equal span {
+          outline: #789 solid 0.2rem;
+          flex-basis: 100%;
+          -webkit-flex-basis: 100%;
+          -ms-flex-basis: 100%;
+          /* flex: 0 1 auto; -webkit-flex: 0 1 auto;; -ms-flex: 0 1 auto; */
+          /* align-self:center; -webkit-align-self:center; -ms-align-self:center; */ }
+        #mobile-first .rowsflex .cols.equal img {
+          outline: #789 solid 0.2rem;
+          flex-basis: 100%;
+          -webkit-flex-basis: 100%;
+          -ms-flex-basis: 100%;
+          /* flex: 0 1 auto; -webkit-flex: 0 1 auto;; -ms-flex: 0 1 auto; */
+          /* align-self:center; -webkit-align-self:center; -ms-align-self:center; */ }
+        #mobile-first .rowsflex .cols.equal .side {
+          text-align: left;
+          outline: #789 solid 0.2rem;
+          padding: 3rem;
+          color: #ff0;
+          flex-basis: 100%;
+          -webkit-flex-basis: 100%;
+          -ms-flex-basis: 100%;
+          /* flex: 0 1 auto; -webkit-flex: 0 1 auto;; -ms-flex: 0 1 auto; */
+          /* align-self:center; -webkit-align-self:center; -ms-align-self:center; */ }
+      #mobile-first .rowsflex .cols:nth-child(2) {
+        background: black !important; }
+      #mobile-first .rowsflex .cols:nth-last-child(2) {
+        background: black !important; }
+      #mobile-first .rowsflex .cols .radius10 {
+        border-radius: 10%; }
+      #mobile-first .rowsflex .cols .radius25 {
+        border-radius: 25%; }
+      #mobile-first .rowsflex .cols .radius50 {
+        border-radius: 50%; }
+      #mobile-first .rowsflex .cols.basis25vh {
+        flex-basis: 25vh;
+        -webkit-flex-basis: 25vh;
+        -ms-flex-basis: 25vh; }
+      #mobile-first .rowsflex .cols.basis50vh {
+        flex-basis: 50vh;
+        -webkit-flex-basis: 50vh;
+        -ms-flex-basis: 50vh; }
+      #mobile-first .rowsflex .cols.basis75vh {
+        flex-basis: 75vh;
+        -webkit-flex-basis: 75vh;
+        -ms-flex-basis: 75vh; }
+      #mobile-first .rowsflex .cols #imgOne {
+        cursor: pointer;
+        z-index: 9; }
+      #mobile-first .rowsflex .cols .kingdom {
+        width: 80%;
+        height: calc(80%*9/16);
+        margin: 10% auto;
+        padding: 5rem;
+        z-index: 0;
+        background: url(/images/screen-800x450x4.jpg) no-repeat center;
+        background-size: contain;
+        outline: #f00 solid 1px; }
+        #mobile-first .rowsflex .cols .kingdom img.emoj {
+          width: 10%;
+          position: absolute;
+          cursor: pointer;
+          display: none; }
+          #mobile-first .rowsflex .cols .kingdom img.emoj.angry {
+            left: 27%;
+            top: 5rem; }
+          #mobile-first .rowsflex .cols .kingdom img.emoj.clown {
+            right: 27%;
+            top: 5rem; }
+          #mobile-first .rowsflex .cols .kingdom img.emoj.flame {
+            left: 27%;
+            bottom: 5rem; }
+          #mobile-first .rowsflex .cols .kingdom img.emoj.heart {
+            right: 27%;
+            bottom: 5rem; }
+    #mobile-first .rowsflex .animation1 {
+      background: url(/images/trees-800x450.jpg) no-repeat center;
+      background-size: auto; }
+      #mobile-first .rowsflex .animation1 .action1 {
+        margin: 0.5rem auto;
+        outline: #f00 solid 1px;
+        cursor: pointer; }
+      #mobile-first .rowsflex .animation1 #talent1 {
+        animation: ActionTalent1 3s;
+        animation-iteration-count: infinite;
+        /* animation-direction:reverse; animation-direction:alternate; */ }
+@keyframes ActionTalent1 {
+  from {
+    transform: rotate(-90deg);
+    left: 0;
+    top: 0;
+    opacity: 1; }
+  to {
+    transform: rotate(90deg);
+    left: 30rem;
+    top: 10rem;
+    opacity: 0; } }
+      #mobile-first .rowsflex .animation1 #talent2 {
+        animation: ActionTalent2 3s;
+        animation-iteration-count: infinite; }
+@keyframes ActionTalent2 {
+  from {
+    transform: rotate(90deg);
+    right: 0;
+    top: 0;
+    opacity: 1; }
+  to {
+    transform: rotate(-90deg);
+    right: 30rem;
+    top: 10rem;
+    opacity: 0.2; } }
+  @media all and (min-width: 320px) and (max-width: 575px) {
+    #mobile-first .rowsflex {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      #mobile-first .rowsflex .cols {
+        width: 96%;
+        margin: 0.4rem auto; }
+        #mobile-first .rowsflex .cols.equal {
+          outline: #669 solid 2rem;
+          display: block; } }
+  @media all and (min-width: 576px) and (max-width: 767px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 48%; }
+        #mobile-first .rowsflex .cols.equal {
+          outline: #669 solid 2rem;
+          display: block; } }
+  @media all and (min-width: 768px) and (max-width: 991px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 32%; }
+        #mobile-first .rowsflex .cols.equal {
+          outline: #669 solid 2rem;
+          display: block; } }
+  @media all and (min-width: 992px) and (max-width: 1199px) {
+    #mobile-first .rowsflex {
+      flex-direction: column;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column; }
+      #mobile-first .rowsflex .cols {
+        width: 48%; }
+        #mobile-first .rowsflex .cols.equal {
+          outline: #669 solid 2rem;
+          display: block; } }
+  @media all and (min-width: 1200px) and (max-width: 3840px) {
+    #mobile-first .rowsflex {
+      flex-direction: row;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row; }
+      #mobile-first .rowsflex .cols {
+        width: 48%; } }
+
+/* EOD */
+
+/*# sourceMappingURL=mist.css.map */

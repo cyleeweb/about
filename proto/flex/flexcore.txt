@@ -1,0 +1,87 @@
+This is a good reference:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+FlexBox Core
+
+Flex Axes:
+Main Axis on which the items align with each other;
+Cross Axis is perpendicular to the Main Axis.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[* FLEX PARENT PROPERTIES *]
+
+flex display: Parent element that holds all flex items.
+    display:flex | inline-flex;
+    By setting the display to one of the two values above, an element becomes a flex container and its children flex items. Setting the display to flex makes the container a block-level element, while setting the display to inline-flex makes the container an inline-level element.
+    
+    flex is the shorthand for flex-grow, flex-shrink and flex-basis combined. The second and third parameters (flex-shrink and flex-basis) are optional. Default is 0 1 auto.
+
+flex-direction: Establishes the MAIN AXIS direction of the flexible items. 
+    flex-direction: row (default) | row-reverse | column | column-reverse | initial - inherit.
+
+justify-content: Determines how content gets placed on the MAIN AXIS on the current line.
+    justify-content: left | right | center | space-between | space-around;
+
+align-items: Determines the default for how flex items get placed on the CROSS AXIS on each line.
+    align-items: stretch | center | flex-start | flex-end | baseline | initial | inherit;
+
+align-content: Determines the default for how CROSS AXIS lines are aligned.
+    align-content: stretch | center | flex-start | flex-end | space-between | space-around;
+    
+flex-flow: Shorthands for flex-direction and flex-wrap to place the flex content.
+    flex-flow: flex-direction flex-wrap|initial|inherit;
+    
+flex-wrap: The flex-wrap property specifies whether the flexible items should wrap or not.
+    flex-wrap: nowrap|wrap|wrap-reverse|initial|inherit;
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Flex 'ITEM': Any child element held within the flex container is considered a flex item. Any text within the container element is wrapped in an unknown flex item.
+
+[* FLEX CHILD PROPERTIES *]
+
+align-self: Determines how a single item is placed along the cross axis inside the flexible container. This overrides any defaults set by align-items. 
+    align-self: auto|stretch|center|flex-start|flex-end|baseline|initial|inherit;
+
+flex-basis: The flex-basis property specifies the initial length of a flexible item.
+    flex-basis: number|auto|initial|inherit;
+    
+flex-grow: The flex-grow property specifies how much the item will grow relative to the rest of the flexible items inside the same container.
+    flex-grow: number (e.g.  0, 3, etc.) |initial|inherit;
+
+flex-shrink: The flex-shrink property specifies how the item will shrink relative to the rest of the flexible items inside the same container.
+    flex-shrink: number|initial|inherit;
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+[* OTHERS *]
+Order
+Places elements in groups and determines which order they are to be placed in within the container.
+
+Lines
+Flex items can either be placed on a singular line or on multiple lines as defined by the flex-wrap property, which controls both the direction of the cross axis and how lines stack within the container.
+
+Dimensions
+Main size and cross size are essentially the height and width of the flex container, each dealing with the main and cross axes respectively.
+
+Align to center
+One of flexbox's advantages is the ability to easily align items within the container to the center of a page, both vertically and horizontally.
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+>>>
+The Bootstrap 4 grid system has five classes:
+
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+The classes above can be combined to create more dynamic and flexible layouts.
+
+Tip: Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm.
+
+The digital design toolkit
