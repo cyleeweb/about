@@ -3,8 +3,8 @@
 <head>
 <title>Cyleeweb.com AngularJS + JQuery + Bootstrap</title>
 <?php include("./common/metatag.php"); ?>
-<?php include("./common/hub-css.php"); ?>
-<?php include("./common/hub-js.php"); ?>
+<?php include("./common/hub-cssdev.php"); ?>
+<?php include("./common/hub-jsdev.php"); ?>
 </head>
 <body>
 <div id="ngboot" class="container-fluid" ng-controller="SiteCtrl">

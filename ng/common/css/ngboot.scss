@@ -230,7 +230,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* About */	
-	#about {height:inherit;
+	#about {height:auto; display:block;
 		#about-main {margin-bottom:3rem; padding:2rem; /*background:$clr-000 url(/images/bigback7.svg) no-repeat center 10rem; background-size:auto;*/ /*border:$clr-0c3b48 solid 1px;*/ /*@include border-radius(1rem);*/
 			.blocks {padding:2rem; line-height: 1.8rem; cursor:pointer; /*border:#111 dotted 1px;*/ /*@include border-radius(1rem);*/ 
 				.tabs {margin:1rem auto; padding:1rem; font-weight:bold; text-align:center; color:$clr-f07890; /*background:$clr-0c3b48; border:#111 dotted 1px;*/ /*@include border-radius(0.5rem);*/ 
@@ -254,7 +254,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* Recommend */	
-	#recommend {height:inherit;
+	#recommend {height:auto; display:none;
 		#recommend-main {margin-bottom:3rem; padding:2rem; background:transparent; /*border:#111 dotted 1px;*/ /*@include border-radius(1rem);*/ 
 			.refs {margin:1rem auto; cursor:pointer;
 				.blocks {padding:1rem; min-height:10rem;
@@ -269,7 +269,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* Gallleries */
-	#galleries {height:inherit;
+	#galleries {height:auto; display:none;
 		#galleries-main {margin-bottom:3rem; /*min-height:82rem;*/ /*background:$clr-111 url(/images/bigback.png) no-repeat center; background-size:cover;*/ padding:2rem 0 4rem 0; color:#e0e0e0; text-align:center; /*border:#111 dotted 1px;*/ /*@include border-radius(1rem);*/
 			#galleries-nav {margin:0 auto; color:$clr-e0e0e0; text-align: center; padding:2rem; cursor: pointer;
 				img {border:$clr-e0e0e0 solid .2rem; margin: 2rem;}
@@ -292,7 +292,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 /* /Glleries */
 
 /* Samples */
-	#samples {height:inherit;
+	#samples {height:auto; display:none;
 		#samples-main {margin-bottom:3rem;
 			.blocks {margin:1rem auto; height:25rem; padding-top:2rem;
 				span {display:block; text-shadow:#000 0.1rem 0.1rem 0.1rem;}
@@ -303,7 +303,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
     
 /* Contact */
-	#contact {height:inherit;
+	#contact {height:auto; display:none;
 		#contact-main {
 			form {margin:2rem auto; max-width:50rem; padding:1rem 5rem; text-align:left; background:$clr-fff; border:$clr-0c3b48 solid 4px; /*@include border-radius(1rem);*/}
 			form div {margin:1rem auto;}
@@ -327,7 +327,7 @@ header#global {padding:1.5rem 0; /*border-bottom:$clr-0c3b48 dotted 0.1rem;*/}
 	}
 
 /* Footer */	
-	footer {height:inherit; padding:5rem 0; margin-bottom:10rem;
+	footer {height:auto; padding:5rem 0; margin-bottom:10rem;
 		#footer-main {
 			span, a {text-shadow:#000 0.1rem 0.1rem 0.1rem;}
 		}

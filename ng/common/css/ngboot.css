@@ -483,7 +483,8 @@ header#global {
     #ngboot .open-close span.close-all:hover {
       color: aqua; }
   #ngboot #about {
-    height: inherit; }
+    height: auto;
+    display: block; }
     #ngboot #about #about-main {
       margin-bottom: 3rem;
       padding: 2rem;
@@ -550,7 +551,8 @@ header#global {
         padding: 1rem;
         color: white; }
   #ngboot #recommend {
-    height: inherit;
+    height: auto;
+    display: none;
     /*#recommend-main:hover {border:$clr-777 solid 1px;}*/ }
     #ngboot #recommend #recommend-main {
       margin-bottom: 3rem;
@@ -580,7 +582,8 @@ header#global {
               /*display:none;*/
               /*background:url(/images/x-small.jpg) no-repeat 22rem 0.1rem;*/ }
   #ngboot #galleries {
-    height: inherit; }
+    height: auto;
+    display: none; }
     #ngboot #galleries #galleries-main {
       margin-bottom: 3rem;
       /*min-height:82rem;*/
@@ -684,7 +687,8 @@ header#global {
         font-weight: bold;
         color: #6ff; }
   #ngboot #samples {
-    height: inherit; }
+    height: auto;
+    display: none; }
     #ngboot #samples #samples-main {
       margin-bottom: 3rem; }
       #ngboot #samples #samples-main .blocks {
@@ -699,7 +703,8 @@ header#global {
         #ngboot #samples #samples-main .blocks img:hover {
           outline: #006699 solid 4px; }
   #ngboot #contact {
-    height: inherit; }
+    height: auto;
+    display: none; }
     #ngboot #contact #contact-main form {
       margin: 2rem auto;
       max-width: 50rem;
@@ -758,7 +763,7 @@ header#global {
     #ngboot #contact #contact-main fieldset input:required {
       background: aqua; }
   #ngboot footer {
-    height: inherit;
+    height: auto;
     padding: 5rem 0;
     margin-bottom: 10rem; }
     #ngboot footer #footer-main span, #ngboot footer #footer-main a {

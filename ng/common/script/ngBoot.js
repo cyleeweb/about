@@ -113,40 +113,39 @@ $(document).ready(function(){
 		scrollTop: 0
 	}, "fast");
 	//return false;
-    var H = $(window).height(); console.log("H: " + H);
+    var DocH = $(document).height(); console.log("DocH: " + DocH);
     //console.log($("body").find(".track").length);
 
-    var track0H = $(".track:eq(0)").height(); console.log("track0H#abouttabs: " + track0H); // #about
-    var track1H = $(".track:eq(1)").height(); console.log("track1H#recommend: " + track1H); // #recommend
+    var track0H = $(".track:eq(0)").height(); console.log("track0H#about: " + track0H); // #about
+    var track1H = 689; console.log("track1H#recommend: " + track1H); // #recommend
     var track2H = $(".track:eq(2)").height(); console.log("track2H#galleries: " + track2H); // #galleries
-    var track3H = $(".track:eq(3)").height(); console.log("track3H#samples: " + track3H); // #samples
+    var track3H = 2586; console.log("track3H#samples: " + track3H); // #samples
     var track4H = $(".track:eq(4)").height(); console.log("track4H#contact: " + track4H); // #contact
     //
     var trackTH = track0H + track1H + track2H + track3H + track4H; console.log("trackTH: " + trackTH);
     var FTop = 150; console.log("FTop: " + FTop);
-    var Fac = 100; console.log("Fac: " + Fac);
+    var Fac = 300; console.log("Fac: " + Fac); // The gap between this and next div.
 
-    var SCRA = (FTop+track0H)+Fac; console.log ("SCRA: " + SCRA);
-    var SCRB = (FTop+track0H+track1H+600)+Fac; console.log ("SCRB: " + SCRB);
-    var SCRC = (FTop+track0H+track1H+600+track2H+300)+Fac; console.log ("SCRC: " + SCRC);
-    var SCRD = (FTop+track0H+track1H+600+track2H+300+track3H+2800)+Fac; console.log ("SCRD: " + SCRD);
+    var ScrA = FTop + Fac; console.log ("ScrA: " + ScrA);
+    var ScrB = ScrA + track1H; console.log ("ScrB: " + ScrB);
+    var ScrC = ScrB + track2H; console.log ("ScrC: " + ScrC);
+    var ScrD = ScrC + track3H; console.log ("ScrD: " + ScrD);
 
 	// ScrollTop 
-	$(window).scroll(function() {
-        if ($(document).scrollTop() >= SCRA) {
-            $('.track:eq(1)').fadeIn(2000); // #recommend
+	$(document).scroll(function() {
+        if ($(document).scrollTop() >= ScrA) {
+            $('.track:eq(1)').fadeIn(2000); // #recommend in
         }
-        if ($(document).scrollTop() >= SCRB) {
-            $('.track:eq(2)').fadeIn(2000); // #galleries
+        if ($(document).scrollTop() >= ScrB) {
+            $('.track:eq(2)').fadeIn(2000); // #galleries in
         }
-        if ($(document).scrollTop() >= SCRC) {
-            $('.track:eq(3)').fadeIn(2000); // #samples
+        if ($(document).scrollTop() >= ScrC) {
+            $('.track:eq(3)').fadeIn(2000); // #samples in
         }
-        if ($(document).scrollTop() >= SCRD) {
-            $('.track:eq(4)').fadeIn(2000); // #contact
+        if ($(document).scrollTop() >= ScrD) {
+            $('.track:eq(4)').fadeIn(2000); // #contact in
         }
 	});
-
 
 	// For smooth scrolling to the anchor id position:
 	$('#photo').hover(function(){
