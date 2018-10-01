@@ -1,0 +1,33 @@
+﻿{
+    "VIDEOS": {
+        "video1": [{
+            "THUMB": "./videos/video1/video1-screen.jpg",
+            "SCREEN": "./videos/video1/video1-screen.html"
+        }],
+        "video2": [{
+            "THUMB": "./videos/video2/video2-screen.jpg",
+            "SCREEN": "./videos/video2/video2-screen.html"
+        }],
+        "video3": [{
+            "THUMB": "./videos/video3/video3-screen.jpg",
+            "SCREEN": "./videos/video3/video3-screen.html"
+        }],
+        "video4": [{
+            "THUMB": "./videos/video4/video4-screen.jpg",
+            "SCREEN": "./videos/video4/video4-screen.html"
+        }],
+        "video5": [{
+            "THUMB": "./videos/video5/video5-screen.jpg",
+            "SCREEN": "./videos/video5/video5-screen.html"
+        }],
+        "video6": [{
+            "THUMB": "./videos/video6/video6-screen.jpg",
+            "SCREEN": "./videos/video6/video6-screen.html"
+        }],
+        "video7": [{
+            "THUMB": "./videos/video7/video7-screen.jpg",
+            "SCREEN": "./videos/video7/video7-screen.html"
+        }]
+    },
+    "DATE": { "date": "September 2018" }
+}
