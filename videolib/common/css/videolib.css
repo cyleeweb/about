@@ -7,60 +7,60 @@ body {
   color: #333;
   overflow-x: hidden;
   /* Container Begins */ }
-  body #video-lib {
+  body #videolib {
     width: 100%;
     min-width: 76.8rem;
     margin: 2rem auto;
     text-align: center;
     display: flex; }
-    body #video-lib .on {
+    body #videolib .on {
       display: block; }
-    body #video-lib .off {
+    body #videolib .off {
       display: none; }
-    body #video-lib .col-left {
+    body #videolib .colleft {
       width: 15%;
       min-width: 20rem;
       margin: 0 auto; }
-      body #video-lib .col-left nav#side {
+      body #videolib .colleft nav#side {
         outline: #ccc dotted 0.1rem; }
-        body #video-lib .col-left nav#side ul {
+        body #videolib .colleft nav#side ul {
           display: flex;
           flex: 1;
           flex-flow: row wrap;
           justify-content: flex-start;
           align-items: center; }
-          body #video-lib .col-left nav#side ul li {
+          body #videolib .colleft nav#side ul li {
             margin: 1rem;
             width: 100%;
             padding: 1rem;
             list-style: none;
             text-align: left;
             outline: #ccc dotted 0.1rem; }
-            body #video-lib .col-left nav#side ul li span {
+            body #videolib .colleft nav#side ul li span {
               cursor: pointer;
               display: inline-block;
               vertical-align: middle; }
-            body #video-lib .col-left nav#side ul li span.last {
+            body #videolib .colleft nav#side ul li span.last {
               position: absolute;
               top: 0.1rem;
               right: 0.25rem;
               min-width: 1rem;
               color: #789; }
-            body #video-lib .col-left nav#side ul li .videolist, body #video-lib .col-left nav#side ul li .uidoclist {
+            body #videolib .colleft nav#side ul li .videolist, body #videolib .colleft nav#side ul li .uidoclist {
               margin-top: 1rem;
               /*display:none;*/
               cursor: pointer;
               padding-left: 2rem; }
-              body #video-lib .col-left nav#side ul li .videolist div, body #video-lib .col-left nav#side ul li .uidoclist div {
+              body #videolib .colleft nav#side ul li .videolist div, body #videolib .colleft nav#side ul li .uidoclist div {
                 cursor: pointer;
                 padding: 0.5rem 0 0.5rem 25%;
                 display: none; }
-            body #video-lib .col-left nav#side ul li .videolist:hover, body #video-lib .col-left nav#side ul li uidocs:hover {
+            body #videolib .colleft nav#side ul li .videolist:hover, body #videolib .colleft nav#side ul li uidocs:hover {
               color: #069;
               text-decoration: underline; }
-          body #video-lib .col-left nav#side ul li:hover {
+          body #videolib .colleft nav#side ul li:hover {
             outline: #069 dotted 0.1rem; }
-    body #video-lib .gutter {
+    body #videolib .gutter {
       width: 2rem;
       height: 90vh;
       line-height: 90vh;
@@ -68,39 +68,40 @@ body {
       cursor: pointer;
       margin: 0 auto;
       outline: #ccc dotted 0.1rem; }
-    body #video-lib .col-right {
+    body #videolib .colright {
       width: 80%;
       min-width: 30rem;
       margin: 0 auto 0 0; }
-      body #video-lib .col-right #hero {
+      body #videolib .colright #hero {
         width: 96%;
         color: #fff;
         margin: 0 auto;
         background: #789;
         padding: 2rem; }
-        body #video-lib .col-right #hero h3 {
+        body #videolib .colright #hero h3 {
           margin: auto; }
-      body #video-lib .col-right p {
+      body #videolib .colright p {
         margin: 1rem auto;
         font-size: 2rem;
         color: #789; }
-      body #video-lib .col-right p.updated {
+      body #videolib .colright p.updated {
         font-size: 1.2rem; }
-      body #video-lib .col-right #collection {
+      body #videolib .colright #collection {
         width: 80%;
-        max-width: 120rem; }
-        body #video-lib .col-right #collection.json {
+        max-width: 120rem;
+        /*.videos {}*/ }
+        body #videolib .colright #collection.json {
           margin: 2rem auto;
           padding: 3rem 4rem;
           text-align: center;
           line-height: 2rem;
           outline: #ccc dotted 0.1rem; }
-        body #video-lib .col-right #collection .name {
+        body #videolib .colright #collection .name {
           font-size: 2rem;
           text-transform: uppercase;
           margin: 2rem auto;
           color: #333; }
-        body #video-lib .col-right #collection iframe {
+        body #videolib .colright #collection iframe {
           width: 100%;
           min-height: 50rem;
           background: #efefef;

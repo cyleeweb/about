@@ -2,7 +2,7 @@
 $(function() {
     // Get external sidenav.html for nav#side
     $.get('./common/sidenav.html', function(navhtml) {
-        $('.col-left').html(navhtml);
+        $('.colleft').html(navhtml);
 
         // Toggle span#protocomps in the scope
         $("nav li .protocomps").on("click tap", function(){
@@ -16,7 +16,7 @@ $(function() {
         // Click .gutter to fadeToggle left column
         $(".gutter").on("click tap", function(){
             //$("nav#side").fadeToggle(100);
-            $(".col-left").fadeToggle(500, function(){
+            $(".colleft").fadeToggle(500, function(){
             });
         });
 
@@ -48,7 +48,7 @@ $(function() {
             // var collection; // optional?
 
             collection = 
-                "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div><div></div>" +
+                "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
                 "<div class='screen'><iframe id='iframeSCREEN' src=" + Object.entries(arrEntries[0][1])[x][1][0].SCREEN + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
