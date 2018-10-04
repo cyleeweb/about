@@ -57,22 +57,22 @@ $(function() {
 
         // For nav#side .videolist
 
-        var fnComps = function(compId){
+        var fnVideos = function(videoId){
             $(".videos").removeClass("on").addClass('off');
-            $(compId).removeClass("off").addClass("on");
+            $(videoId).removeClass("off").addClass("on");
         };
         
         //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
             $("#v1, #v2, #v3, #v4, #v5, #v6, #v7").on("click", function(){
                 var D = $(this).attr("data");
-                fnComps(D);
+                fnVideos(D);
             });
 
         //- EDITABLE SECTION FOR COMPONENT LIST ADDITIONS
 
         // Hash in URL
         if (location.hash != ""){
-            fnComps(location.hash);
+            fnVideos(location.hash);
         }
     });
 });
