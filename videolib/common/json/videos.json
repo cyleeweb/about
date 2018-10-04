@@ -1,30 +1,58 @@
 ﻿{
     "VIDEOS": {
         "video1": [{
+            "VID": "1",
+            "VPLAYER": "https://www.youtube.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video1/video1-screen.jpg",
             "SCREEN": "./videos/video1/video1-screen.html"
         }],
         "video2": [{
+            "VID": "2",
+            "VPLAYER": "https://www.youtube.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video2/video2-screen.jpg",
             "SCREEN": "./videos/video2/video2-screen.html"
         }],
         "video3": [{
+            "VID": "3",
+            "VPLAYER": "https://www.youtube.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video3/video3-screen.jpg",
             "SCREEN": "./videos/video3/video3-screen.html"
         }],
         "video4": [{
+            "VID": "4",
+            "VPLAYER": "https://www.vimeo.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video4/video4-screen.jpg",
             "SCREEN": "./videos/video4/video4-screen.html"
         }],
         "video5": [{
+            "VID": "5",
+            "VPLAYER": "https://www.vimeo.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video5/video5-screen.jpg",
             "SCREEN": "./videos/video5/video5-screen.html"
         }],
         "video6": [{
+            "VID": "6",
+            "VPLAYER": "https://www.vimeo.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video6/video6-screen.jpg",
             "SCREEN": "./videos/video6/video6-screen.html"
         }],
         "video7": [{
+            "VID": "7",
+            "VPLAYER": "https://www.vimeo.com",
+            "VPAREM": "xxx",
+            "DESC": "Description",
             "THUMB": "./videos/video7/video7-screen.jpg",
             "SCREEN": "./videos/video7/video7-screen.html"
         }]
