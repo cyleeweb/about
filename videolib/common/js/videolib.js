@@ -63,7 +63,7 @@ $(function() {
         };
         
         //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
-            $("#v1, #v2, #v3, #v4, #v5, #v6, #v7").on("click", function(){
+            $("#vdo1, #vdo2, #vdo3, #vdo4, #vdo5, #vdo6, #vdo7").on("click", function(){
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
