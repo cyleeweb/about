@@ -1,7 +1,7 @@
 // Onload
 $(function() {
     // Get external sidenav.html for nav#side
-    $.get('./common/sidenav.html', function(navhtml) {
+    $.get('./sidenav.html', function(navhtml) {
         $('.colleft').html(navhtml);
 
         // Toggle span#protocomps in the scope
@@ -49,7 +49,7 @@ $(function() {
 
             collection = 
                 "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
-                "<div class='screen'><iframe id='iframeSCREEN' src=" + Object.entries(arrEntries[0][1])[x][1][0].SCREEN + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>"
+                "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].VIMAGE + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
         });
