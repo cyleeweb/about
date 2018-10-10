@@ -1,36 +1,6 @@
 // Onload
 $(function() {
-    // Get external sidenav.html for nav#side
-    $.get('./sidenav.html', function(navhtml) {
-        $('.colleft').html(navhtml);
-
-        // Toggle span#protocomps in the scope
-        $("nav li .protocomps").on("click tap", function(){
-            $("li div.videolist").fadeToggle(500);
-        });
-
-        $("nav li .uidocs").on("click tap", function(){
-            $("li div.uidoclist").fadeToggle(500);
-        });
-
-        // Click .gutter to fadeToggle left column
-        $(".gutter").on("click tap", function(){
-            //$("nav#side").fadeToggle(100);
-            $(".colleft").fadeToggle(500, function(){
-            });
-        });
-
-        // Toggle .hero-inner
-        $("#hero .hero-toggle").on("click tap", function(){
-            //$("nav#side").fadeToggle(100);
-            $("#hero .hero-inner").fadeToggle(500);
-        });
-    });
-});
-
-// Onload
-$(function() {
-    // Get JSON object for components collection
+    // Get JSON object for videos collection
     $.getJSON("./common/json/videos.json", function(json) {
 
         // Convert object 'json' to arrays of arrKeys and arrEntries for parsing used in the Merthod JQ
@@ -45,11 +15,16 @@ $(function() {
         $.each(Object.entries(arrEntries[0][1]), function(x, element) {
 
             //console.log(element); // VIDEOS
-            // var collection; // optional?
+
+            topnav = 
+                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>WHATEVER</li>"
+            //    
+            $('#topnav').append(topnav); // MUST use append() method for this.
 
             collection = 
                 "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
-                "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].VIMAGE + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
+                "<a href='" + Object.entries(arrEntries[0][1])[x][1][0].VPLAYER + "' target='_blank'><img id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + " />" +
+                "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" + "</a>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
         });
@@ -63,7 +38,7 @@ $(function() {
         };
         
         //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
-            $("#vdo1, #vdo2, #vdo3, #vdo4, #vdo5, #vdo6, #vdo7").on("click", function(){
+            $(".videolist").on("click", function(){
                 var D = $(this).attr("data");
                 fnVideos(D);
             });

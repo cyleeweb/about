@@ -5,63 +5,63 @@
             "DATA": "#video1",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video1/video1-screen.jpg",
-            "VIMAGE": "./videos/video1/video1-screen.html"
+            "DESC": "Description 1",
+            "IMGSRC": "./videos/video1/video1-screen.jpg",
+            "LINKTO": "https://www.yahoo1.com"
         }],
         "video2": [{
             "VID": "2",
             "DATA": "#video2",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video2/video2-screen.jpg",
-            "VIMAGE": "./videos/video2/video2-screen.html"
+            "DESC": "Description 2",
+            "IMGSRC": "./videos/video2/video2-screen.jpg",
+            "LINKTO": "https://www.yahoo2.com"
         }],
         "video3": [{
             "VID": "3",
             "DATA": "#video3",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video3/video3-screen.jpg",
-            "VIMAGE": "./videos/video3/video3-screen.html"
+            "DESC": "Description 3",
+            "IMGSRC": "./videos/video3/video3-screen.jpg",
+            "LINKTO": "https://www.yahoo3.com"
         }],
         "video4": [{
             "VID": "4",
             "DATA": "#video4",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video4/video4-screen.jpg",
-            "VIMAGE": "./videos/video4/video4-screen.html"
+            "DESC": "Description 4",
+            "IMGSRC": "./videos/video4/video4-screen.jpg",
+            "LINKTO": "https://www.yahoo4.com"
         }],
         "video5": [{
             "VID": "5",
             "DATA": "#video5",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video5/video5-screen.jpg",
-            "VIMAGE": "./videos/video5/video5-screen.html"
+            "DESC": "Description 5",
+            "IMGSRC": "./videos/video5/video5-screen.jpg",
+            "LINKTO": "https://www.yahoo5.com"
         }],
         "video6": [{
             "VID": "6",
             "DATA": "#video6",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video6/video6-screen.jpg",
-            "VIMAGE": "./videos/video6/video6-screen.html"
+            "DESC": "Description 6",
+            "IMGSRC": "./videos/video6/video6-screen.jpg",
+            "LINKTO": "https://www.yahoo6.com"
         }],
         "video7": [{
             "VID": "7",
             "DATA": "#video7",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
-            "DESC": "Description",
-            "THUMB": "./videos/video7/video7-screen.jpg",
-            "VIMAGE": "./videos/video7/video7-screen.html"
+            "DESC": "Description 7",
+            "IMGSRC": "./videos/video7/video7-screen.jpg",
+            "LINKTO": "https://www.yahoo7.com"
         }]
     },
     "DATE": { "date": "September 2018" }

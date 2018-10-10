@@ -17,96 +17,57 @@ body {
       display: block; }
     body #videolib .off {
       display: none; }
-    body #videolib .colleft {
-      width: 15%;
-      min-width: 20rem;
-      margin: 0 auto; }
-      body #videolib .colleft nav#side {
-        outline: #ccc dotted 0.1rem; }
-        body #videolib .colleft nav#side ul {
-          display: flex;
-          flex: 1;
-          flex-flow: row wrap;
-          justify-content: flex-start;
-          align-items: center; }
-          body #videolib .colleft nav#side ul li {
-            margin: 1rem;
-            width: 100%;
-            padding: 1rem;
-            list-style: none;
-            text-align: left;
-            outline: #ccc dotted 0.1rem; }
-            body #videolib .colleft nav#side ul li span {
-              cursor: pointer;
-              display: inline-block;
-              vertical-align: middle; }
-            body #videolib .colleft nav#side ul li span.last {
-              position: absolute;
-              top: 0.1rem;
-              right: 0.25rem;
-              min-width: 1rem;
-              color: #789; }
-            body #videolib .colleft nav#side ul li .videolist, body #videolib .colleft nav#side ul li .uidoclist {
-              margin-top: 1rem;
-              /*display:none;*/
-              cursor: pointer;
-              padding-left: 2rem; }
-              body #videolib .colleft nav#side ul li .videolist div, body #videolib .colleft nav#side ul li .uidoclist div {
-                cursor: pointer;
-                padding: 0.5rem 0 0.5rem 25%;
-                display: none; }
-            body #videolib .colleft nav#side ul li .videolist:hover, body #videolib .colleft nav#side ul li uidocs:hover {
-              color: #069;
-              text-decoration: underline; }
-          body #videolib .colleft nav#side ul li:hover {
-            outline: #069 dotted 0.1rem; }
-    body #videolib .gutter {
-      width: 2rem;
-      height: 90vh;
-      line-height: 90vh;
-      color: #789;
-      cursor: pointer;
-      margin: 0 auto;
-      outline: #ccc dotted 0.1rem; }
-    body #videolib .colright {
-      width: 80%;
+    body #videolib .main {
+      width: 100%;
       min-width: 30rem;
       margin: 0 auto 0 0; }
-      body #videolib .colright #hero {
+      body #videolib .main #hero {
         width: 96%;
         color: #fff;
         margin: 0 auto;
         background: #789;
         padding: 2rem; }
-        body #videolib .colright #hero h3 {
+        body #videolib .main #hero h3 {
           margin: auto; }
-      body #videolib .colright p {
+        body #videolib .main #hero ul#topnav {
+          display: flex;
+          flex: 1;
+          flex-flow: row wrap;
+          justify-content: center;
+          align-items: center; }
+          body #videolib .main #hero ul#topnav li.videolist {
+            margin: 1rem;
+            padding: 1rem;
+            list-style: none;
+            text-align: left;
+            outline: #ccc dotted 0.1rem;
+            cursor: pointer; }
+          body #videolib .main #hero ul#topnav li.videolist:hover {
+            outline: #069 dotted 0.1rem; }
+      body #videolib .main p {
         margin: 1rem auto;
         font-size: 2rem;
         color: #789; }
-      body #videolib .colright p.updated {
+      body #videolib .main p.updated {
         font-size: 1.2rem; }
-      body #videolib .colright #collection {
+      body #videolib .main #collection {
         width: 80%;
         max-width: 120rem;
+        outline: #ccc dotted 0.1rem;
         /*.videos {}*/ }
-        body #videolib .colright #collection.json {
+        body #videolib .main #collection.json {
           margin: 2rem auto;
-          padding: 3rem 4rem;
+          padding: 1rem 4rem;
           text-align: center;
-          line-height: 2rem;
-          outline: #ccc dotted 0.1rem; }
-        body #videolib .colright #collection .name {
+          line-height: 2rem; }
+        body #videolib .main #collection .name {
           font-size: 2rem;
-          text-transform: uppercase;
           margin: 2rem auto;
           color: #333; }
-        body #videolib .colright #collection iframe {
-          width: 100%;
-          min-height: 50rem;
-          background: #efefef;
-          padding: 3rem;
-          margin: 1rem auto;
-          outline: #ccc dotted 0.1rem; }
+        body #videolib .main #collection .videos img {
+          width: 100%; }
+        body #videolib .main #collection .videos .desc {
+          position: relative;
+          margin: -30% auto; }
 
 /*# sourceMappingURL=videolib.css.map */
