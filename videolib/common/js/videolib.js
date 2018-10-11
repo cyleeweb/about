@@ -22,8 +22,8 @@ $(function() {
 
             collection = 
                 "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
-                "<a href='" + Object.entries(arrEntries[0][1])[x][1][0].VPLAYER + "' target='_blank'><img id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + " />" +
-                "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" + "</a>"
+                "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" +
+                "<a href='" + Object.entries(arrEntries[0][1])[x][1][0].VPLAYER + "' target='_blank'><img id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + " /></a>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
 
@@ -34,7 +34,7 @@ $(function() {
             };
             
             //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
-            $(".videolist").on("click", function(){
+            $(".videolist").on("click mouseover mouseenter tap", function(){
                 var D = $(this).attr("data");
                 fnVideos(D);
             });

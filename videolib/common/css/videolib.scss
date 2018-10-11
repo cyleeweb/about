@@ -34,9 +34,9 @@ body {background:#fafafa; color:#333; overflow-x:hidden;
                 &.json {margin:2rem auto; padding: 1rem 4rem; text-align:center; line-height: 2rem; }
                 /*.videos {}*/
                 .name {font-size:2rem; margin:2rem auto; color:#333;}
-                .videos {
+                .videos {outline:#f00 solid 1px;
+                    .desc {position:relative; margin:0 auto;}
                     img {width:100%;}
-                    .desc {position:relative; margin:-30% auto;}
                 }
             }
         }

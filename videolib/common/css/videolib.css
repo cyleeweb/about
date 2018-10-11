@@ -66,10 +66,12 @@ body {
           font-size: 2rem;
           margin: 2rem auto;
           color: #333; }
-        body #videolib .main #collection .videos img {
-          width: 100%; }
-        body #videolib .main #collection .videos .desc {
-          position: relative;
-          margin: -30% auto; }
+        body #videolib .main #collection .videos {
+          outline: #f00 solid 1px; }
+          body #videolib .main #collection .videos .desc {
+            position: relative;
+            margin: 0 auto; }
+          body #videolib .main #collection .videos img {
+            width: 100%; }
 
 /*# sourceMappingURL=videolib.css.map */
