@@ -13,11 +13,10 @@ $(function() {
 
         //+ Method JQ each() approach looping thru 'arrEntries'
         $.each(Object.entries(arrEntries[0][1]), function(x, element) {
-
             //console.log(element); // VIDEOS
 
             topnav = 
-                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>WHATEVER</li>"
+                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>" + Object.keys(arrEntries[0][1])[x] + "<br><img src='"+ Object.entries(arrEntries[0][1])[x][1][0].IMGSRC +"'></img></li>"
             //    
             $('#topnav').append(topnav); // MUST use append() method for this.
 
@@ -27,23 +26,21 @@ $(function() {
                 "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" + "</a>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
-        });
-        //- Method JQ each() approach looping thru 'arrEntries'
 
-        // For nav#side .videolist
-
-        var fnVideos = function(videoId){
-            $(".videos").removeClass("on").addClass('off');
-            $(videoId).removeClass("off").addClass("on");
-        };
-        
-        //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
+            // For nav#topnav .videolist
+            var fnVideos = function(DataId){
+                $(".videos").removeClass("on").addClass('off');
+                $(DataId).removeClass("off").addClass("on");
+            };
+            
+            //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
             $(".videolist").on("click", function(){
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
-
-        //- EDITABLE SECTION FOR COMPONENT LIST ADDITIONS
+            //- EDITABLE SECTION FOR COMPONENT LIST ADDITIONS
+        });
+        //- Method JQ each() approach looping thru 'arrEntries'
 
         // Hash in URL
         if (location.hash != ""){

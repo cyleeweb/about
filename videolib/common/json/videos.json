@@ -1,67 +1,53 @@
 ﻿{
     "VIDEOS": {
-        "video1": [{
-            "VID": "1",
-            "DATA": "#video1",
+        "Video1": [{
+            "DATA": "#Video1",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
             "DESC": "Description 1",
-            "IMGSRC": "./videos/video1/video1-screen.jpg",
-            "LINKTO": "https://www.yahoo1.com"
+            "IMGSRC": "./videos/video1/video1-screen.jpg"
         }],
-        "video2": [{
-            "VID": "2",
-            "DATA": "#video2",
+        "Video2": [{
+            "DATA": "#Video2",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
             "DESC": "Description 2",
-            "IMGSRC": "./videos/video2/video2-screen.jpg",
-            "LINKTO": "https://www.yahoo2.com"
+            "IMGSRC": "./videos/video2/video2-screen.jpg"
         }],
-        "video3": [{
-            "VID": "3",
-            "DATA": "#video3",
+        "Video3": [{
+            "DATA": "#Video3",
             "VPLAYER": "https://www.youtube.com",
             "VPAREM": "xxx",
             "DESC": "Description 3",
-            "IMGSRC": "./videos/video3/video3-screen.jpg",
-            "LINKTO": "https://www.yahoo3.com"
+            "IMGSRC": "./videos/video3/video3-screen.jpg"
         }],
-        "video4": [{
-            "VID": "4",
-            "DATA": "#video4",
+        "Video4": [{
+            "DATA": "#Video4",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
             "DESC": "Description 4",
-            "IMGSRC": "./videos/video4/video4-screen.jpg",
-            "LINKTO": "https://www.yahoo4.com"
+            "IMGSRC": "./videos/video4/video4-screen.jpg"
         }],
-        "video5": [{
-            "VID": "5",
-            "DATA": "#video5",
+        "Video5": [{
+            "DATA": "#Video5",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
             "DESC": "Description 5",
-            "IMGSRC": "./videos/video5/video5-screen.jpg",
-            "LINKTO": "https://www.yahoo5.com"
+            "IMGSRC": "./videos/video5/video5-screen.jpg"
         }],
-        "video6": [{
-            "VID": "6",
-            "DATA": "#video6",
+        "Video6": [{
+            "DATA": "#Video6",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
             "DESC": "Description 6",
-            "IMGSRC": "./videos/video6/video6-screen.jpg",
-            "LINKTO": "https://www.yahoo6.com"
+            "IMGSRC": "./videos/video6/video6-screen.jpg"
         }],
-        "video7": [{
-            "VID": "7",
-            "DATA": "#video7",
+        "Video7": [{
+            "DATA": "#Video7",
             "VPLAYER": "https://www.vimeo.com",
             "VPAREM": "xxx",
             "DESC": "Description 7",
-            "IMGSRC": "./videos/video7/video7-screen.jpg",
-            "LINKTO": "https://www.yahoo7.com"
+            "IMGSRC": "./videos/video7/video7-screen.jpg"
         }]
     },
     "DATE": { "date": "September 2018" }

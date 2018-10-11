@@ -9,7 +9,7 @@ body {
   /* Container Begins */ }
   body #videolib {
     width: 100%;
-    min-width: 76.8rem;
+    min-width: 32rem;
     margin: 2rem auto;
     text-align: center;
     display: flex; }
@@ -19,7 +19,6 @@ body {
       display: none; }
     body #videolib .main {
       width: 100%;
-      min-width: 30rem;
       margin: 0 auto 0 0; }
       body #videolib .main #hero {
         width: 96%;
@@ -32,16 +31,19 @@ body {
         body #videolib .main #hero ul#topnav {
           display: flex;
           flex: 1;
-          flex-flow: row wrap;
+          flex-flow: row;
           justify-content: center;
           align-items: center; }
           body #videolib .main #hero ul#topnav li.videolist {
             margin: 1rem;
             padding: 1rem;
             list-style: none;
-            text-align: left;
+            text-align: center;
             outline: #ccc dotted 0.1rem;
             cursor: pointer; }
+            body #videolib .main #hero ul#topnav li.videolist img {
+              width: 80%;
+              margin-top: 1rem; }
           body #videolib .main #hero ul#topnav li.videolist:hover {
             outline: #069 dotted 0.1rem; }
       body #videolib .main p {

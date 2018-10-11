@@ -6,20 +6,23 @@
 body {background:#fafafa; color:#333; overflow-x:hidden;
     /* Container Begins */
     #videolib { 
-        width:100%; min-width:76.8rem; margin:2rem auto; text-align:center;
+        width:100%; min-width:32rem; margin:2rem auto; text-align:center;
         .on {display:block;}
         .off {display:none;}
         display:flex;
 
-        .main {width:100%; min-width:30rem; margin:0 auto 0 0;
+        .main {width:100%; margin:0 auto 0 0;
             #hero {width:96%; color:#fff; margin:0 auto; background:#789; padding:2rem;
                 h3 {margin:auto;}
-                ul#topnav {display:flex;
+                ul#topnav {
+                    display:flex;
                     flex:1;
-                    flex-flow:row wrap;
+                    flex-flow:row;
                     justify-content: center;
                     align-items:center; 
-                    li.videolist {margin:1rem; padding:1rem; list-style:none; text-align:left; outline:#ccc dotted 0.1rem; cursor:pointer;}
+                    li.videolist {margin:1rem; padding:1rem; list-style:none; text-align:center; outline:#ccc dotted 0.1rem; cursor:pointer;
+                        img {width:80%; margin-top:1rem;}
+                    }
                     li.videolist:hover {outline:#069 dotted 0.1rem;} 
                 }
             }
