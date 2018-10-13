@@ -1,53 +1,76 @@
 ﻿{
     "VIDEOS": {
-        "Video1": [{
-            "DATA": "#Video1",
-            "VPLAYER": "https://www.youtube.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 1",
+        "ServiceNow-1": [{
+            "DATA": "#ServiceNow-1",
+            "IFMSRC": "https://www.youtube.com/embed/UI7B306CdoM/?rel=0&amp;wmode=transparent",
+            "DESC": "ServiceNow CEO",
             "IMGSRC": "./videos/video1/video1-screen.jpg"
         }],
-        "Video2": [{
-            "DATA": "#Video2",
-            "VPLAYER": "https://www.youtube.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 2",
+        "ServiceNow-2": [{
+            "DATA": "#ServiceNow-2",
+            "IFMSRC": "https://www.youtube.com/embed/StF3bXCbtJ8/?rel=0&amp;wmode=transparent",
+            "DESC": "ServiceNow Developer Tutorial",
             "IMGSRC": "./videos/video2/video2-screen.jpg"
         }],
-        "Video3": [{
-            "DATA": "#Video3",
-            "VPLAYER": "https://www.youtube.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 3",
+        "ServiceNow-3": [{
+            "DATA": "#ServiceNow-3",
+            "IFMSRC": "https://www.youtube.com/embed/jj6wP62oqPo/?rel=0&amp;wmode=transparent",
+            "DESC": "ServiceNow Governance Risk, and Compliance",
             "IMGSRC": "./videos/video3/video3-screen.jpg"
         }],
-        "Video4": [{
-            "DATA": "#Video4",
-            "VPLAYER": "https://www.vimeo.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 4",
+        "Hightail-1": [{
+            "DATA": "#Hightail-1",
+            "IFMSRC": "https://www.youtube.com/embed/o69Jo8vkkng/?rel=0&amp;wmode=transparent",
+            "DESC": "Before Hightail",
             "IMGSRC": "./videos/video4/video4-screen.jpg"
         }],
-        "Video5": [{
-            "DATA": "#Video5",
-            "VPLAYER": "https://www.vimeo.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 5",
+        "Hightail-2": [{
+            "DATA": "#Hightail-2",
+            "IFMSRC": "https://player.vimeo.com/video/80035927?badge=0",
+            "DESC": "Sony Pictures Televiion + Hightail",
             "IMGSRC": "./videos/video5/video5-screen.jpg"
         }],
-        "Video6": [{
-            "DATA": "#Video6",
-            "VPLAYER": "https://www.vimeo.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 6",
+        "Hightail-3": [{
+            "DATA": "#Hightail-3",
+            "IFMSRC": "https://player.vimeo.com/video/80037332?badge=0",
+            "DESC": "Burt & Forman + Hightail",
             "IMGSRC": "./videos/video6/video6-screen.jpg"
         }],
-        "Video7": [{
-            "DATA": "#Video7",
-            "VPLAYER": "https://www.vimeo.com",
-            "VPAREM": "xxx",
-            "DESC": "Description 7",
+        "Hightail-4": [{
+            "DATA": "#Hightail-4",
+            "IFMSRC": "https://player.vimeo.com/video/80037005?badge=0",
+            "DESC": "Alabama Technology Network + Hightail",
             "IMGSRC": "./videos/video7/video7-screen.jpg"
+        }],
+        "Hightail-5": [{
+            "DATA": "#Hightail-5",
+            "IFMSRC": "https://player.vimeo.com/video/52120891?badge=0",
+            "DESC": "Overview (YouSendIt)",
+            "IMGSRC": "./videos/video8/video8-screen.jpg"
+        }],
+        "Hightail-6": [{
+            "DATA": "#Hightail-6",
+            "IFMSRC": "https://player.vimeo.com/video/52120897?badge=0",
+            "DESC": "Send (YouSendIt)",
+            "IMGSRC": "./videos/video9/video9-screen.jpg"
+        }],
+        "Hightail-7": [{
+            "DATA": "#Hightail-7",
+            "IFMSRC": "https://player.vimeo.com/video/52120895?badge=0",
+            "DESC": "Share (YouSendIt)",
+            "IMGSRC": "./videos/video10/video10-screen.jpg"
+        }],
+        "Hightail-8": [{
+            "DATA": "#Hightail-8",
+            "IFMSRC": "https://player.vimeo.com/video/52120893?badge=0",
+            "DESC": "Sync (YouSendIt)",
+            "IMGSRC": "./videos/video11/video11-screen.jpg"
+        }],
+        "Hightail-9": [{
+            "DATA": "#Hightail-9",
+            "IFMSRC": "https://player.vimeo.com/video/52120892?badge=0",
+            "DESC": "Sign (YouSendIt)",
+            "IMGSRC": "./videos/video12/video12-screen.jpg"
         }]
     },
     "DATE": { "date": "September 2018" }

@@ -16,14 +16,15 @@ $(function() {
             //console.log(element); // VIDEOS
 
             topnav = 
-                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>" + Object.keys(arrEntries[0][1])[x] + "<br><img src='"+ Object.entries(arrEntries[0][1])[x][1][0].IMGSRC +"'></img></li>"
+                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>" + Object.keys(arrEntries[0][1])[x] + 
+                "<br><img src='" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + "'></img></li>"
             //    
             $('#topnav').append(topnav); // MUST use append() method for this.
 
             collection = 
                 "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
                 "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" +
-                "<a href='" + Object.entries(arrEntries[0][1])[x][1][0].VPLAYER + "' target='_blank'><img id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + " /></a>"
+                "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IFMSRC + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
 
@@ -33,12 +34,20 @@ $(function() {
                 $(DataId).removeClass("off").addClass("on");
             };
             
-            //+ EDITABLE SECTION FOR COMPONENT LIST ADDITION
-            $(".videolist").on("click mouseover mouseenter tap", function(){
+            // .videolist effect
+            $(".videolist").on("mouseover mouseenter tap", function(){
+                $("#collection").css("display","block");
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
-            //- EDITABLE SECTION FOR COMPONENT LIST ADDITIONS
+
+            $(".videolist").on("click", function(){
+                window.scrollTo(0, 250);
+            });
+
+            $(".up").on("click", function(){
+                window.scrollTo(0, 0);
+            });
         });
         //- Method JQ each() approach looping thru 'arrEntries'
 
