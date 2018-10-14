@@ -14,7 +14,6 @@ $(function() {
         //+ Method JQ each() approach looping thru 'arrEntries'
         $.each(Object.entries(arrEntries[0][1]), function(x, element) {
             //console.log(element); // VIDEOS
-
             topnav = 
                 "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>" + Object.keys(arrEntries[0][1])[x] + 
                 "<br><img src='" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + "'></img></li>"
@@ -40,16 +39,19 @@ $(function() {
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
-
-            $(".videolist").on("click", function(){
-                window.scrollTo(0, 250);
-            });
-
-            $(".up").on("click", function(){
-                window.scrollTo(0, 0);
-            });
         });
         //- Method JQ each() approach looping thru 'arrEntries'
+
+        $(".videolist").on("click", function(){
+            var heroH = $("#hero").height(); //alert(heroH);
+            var heroW = $("#hero").width(); //alert(heroW);
+            window.scrollTo(0, heroH);
+        });
+
+        $(".up").on("click", function(){
+            window.scrollTo(0, 0);
+            $("#collection").css("display","none");
+        });
 
         // Hash in URL
         if (location.hash != ""){
