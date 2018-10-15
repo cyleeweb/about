@@ -45,6 +45,7 @@ $(function() {
         $(".videolist").on("click", function(){
             var heroH = $("#hero").height(); //alert(heroH);
             var heroW = $("#hero").width(); //alert(heroW);
+            //var iframeW = $("iframe#vscreen").width(); alert(iframeW);
             window.scrollTo(0, heroH);
         });
 

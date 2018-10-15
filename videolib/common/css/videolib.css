@@ -35,9 +35,8 @@ body {
           justify-content: center;
           align-items: center; }
           body #videolib .main #hero ul#topnav li.videolist {
-            width: 20rem;
             margin: 1rem;
-            padding: 1rem;
+            padding: 2rem 0;
             list-style: none;
             text-align: center;
             outline: #555 dotted 0.1rem;
@@ -47,9 +46,6 @@ body {
               margin-top: 1rem; }
           body #videolib .main #hero ul#topnav li.videolist:hover {
             outline: #069 dotted 0.1rem; }
-        @media all and (min-width: 1280px) {
-          body #videolib .main #hero ul#topnav {
-            flex-flow: row wrap; } }
       body #videolib .main p {
         margin: 1rem auto;
         font-size: 2rem;
@@ -59,7 +55,7 @@ body {
         body #videolib .main p.updated span.up {
           padding: 0 0.5rem;
           position: absolute;
-          right: -2rem;
+          right: 0;
           top: -0.5rem;
           cursor: pointer;
           font-size: 2.4rem; }
@@ -70,7 +66,7 @@ body {
         /*.videos {}*/ }
         body #videolib .main #collection.json {
           margin: 2rem auto;
-          padding: 1rem 4rem;
+          padding: 1rem;
           text-align: center;
           line-height: 2rem; }
         body #videolib .main #collection .name {
@@ -82,13 +78,40 @@ body {
           margin: 1rem auto;
           color: #fff;
           font-size: 2.4rem; }
-        body #videolib .main #collection .videos img {
+      @media screen and (min-width: 320px) {
+        body #videolib .main #hero ul#topnav li.videolist {
           width: 100%; }
-        body #videolib .main #collection iframe#vscreen {
-          width: 100%;
-          min-height: 70.3vh;
-          height: 70.3vh;
-          padding: 3rem;
-          margin: 1rem auto; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          width: 72vw;
+          height: 14.4rem;
+          margin: 1rem auto; } }
+      @media screen and (min-width: 480px) {
+        body #videolib .main #hero ul#topnav li.videolist {
+          width: 40%; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          width: 76vw;
+          height: 21.8rem;
+          margin: 1rem auto; } }
+      @media screen and (min-width: 768px) {
+        body #videolib .main #hero ul#topnav li.videolist {
+          width: 40%; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          width: 78vw;
+          height: 34.5rem;
+          margin: 1rem auto; } }
+      @media screen and (min-width: 1024px) {
+        body #videolib .main #hero ul#topnav li.videolist {
+          width: 25%; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          width: 78vw;
+          height: 46.08rem;
+          margin: 1rem auto; } }
+      @media screen and (min-width: 1280px) {
+        body #videolib .main #hero ul#topnav li.videolist {
+          width: 20%; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          width: 80rem;
+          height: 45rem;
+          margin: 1rem auto; } }
 
 /*# sourceMappingURL=videolib.css.map */
