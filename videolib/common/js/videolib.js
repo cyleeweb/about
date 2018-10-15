@@ -26,6 +26,7 @@ $(function() {
                 "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IFMSRC + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
+            $(".videolist").attr("title", "Click to access the video.");
 
             // For nav#topnav .videolist
             var fnVideos = function(DataId){

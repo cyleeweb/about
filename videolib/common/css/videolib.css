@@ -55,7 +55,7 @@ body {
         body #videolib .main p.updated span.up {
           padding: 0 0.5rem;
           position: absolute;
-          right: 0;
+          right: 5rem;
           top: -0.5rem;
           cursor: pointer;
           font-size: 2.4rem; }

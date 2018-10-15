@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" 
+      content="text/html; charset=utf-8"/>
+    <title>Google Visualization API Sample</title>
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+ function appendSpreadsheet() {
+  var script = document.createElement('script');
+  script.src = 'http://spreadsheets.google.com/feeds/list/0Ah0xU81penP1dE1TNnpscHdYYU5qSU5GZldLM1VMMVE/od6/public/values?alt=json-in-script&callback=onSpreadsheetLoad';
+  document.body.appendChild(script);
+}
+
+function onSpreadsheetLoad(json) {
+  var rows = json.feed.entry || [];
+  var data = new google.visualization.DataTable();
+  data.addColumn('date', 'Date');
+  data.addColumn('number', 'Total APIs');
+  data.addColumn('string', 'Changes');
+  data.addRows(rows.length);
+        
+  for (var i = 0; i < rows.length; i++) {
+    var row = rows[i];
+    var year = parseInt(row['gsx$year']['$t']);
+    var month = parseInt(row['gsx$month']['$t']);
+    var day = parseInt(row['gsx$day']['$t']);
+    var total = parseFloat(row['gsx$apitotal']['$t']);
+    var info = row['gsx$info']['$t'];
+    data.setValue(i, 0, new Date(year, month, day));
+    data.setValue(i, 1, total);
+    data.setValue(i, 2, info);
+  }
+        
+  var annotatedtimeline = new google.visualization.AnnotatedTimeLine(
+     document.getElementById('visualization'));
+  annotatedtimeline.draw(data, {'displayAnnotations': true});
+}
+    </script>
+  </head>
+  <body style="font-family: Arial;border: 0 none;">
+    <div id="visualization" style="width: 500px; height: 300px;"></div>
+  </body>
+</html>

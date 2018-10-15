@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+<style>
+#imgFlicker img { width:auto; height: auto; margin:10px; border:#fff; border-style:solid; border-width:6px;}
+</style>
+<script>
+
+function apiFlicker (){
+var RequestObj = document.getElementById('searchform').searchfield.value;
+	alert('Your searched: ' + RequestObj + ', search another tag next.');
+	searchtag = RequestObj;
+var apiURL = 'https://api.flickr.com/services/feeds/photos_public.gne?tags='+searchtag+'&tagmode=any&format=json&jsoncallback=?';
+	jQuery.getJSON(apiURL,
+	function(data) {
+		jQuery.each(data.items,
+		function(i,item) {
+			$("<img/>").attr("src", item.media.m).appendTo("#imgFlicker");
+			if ( i == 29)
+			return false;
+    		});
+	}); 
+}
+
+</script>
+</head>
+<body>
+<div id="imgFlicker" style="background:#000; width:100%; height:auto; padding:0px;"></div>
+
+	<form id="searchform" name="searchform" style="margin:0 auto; width:300px">
+    <input id="searchfield" name="searchfield" type="text" value="">
+    <input id="submit" type="button" value="Search a tag to display up to 30 public photos" onclick = "apiFlicker()">
+    </form>
+
+
+</body>
+</html>
