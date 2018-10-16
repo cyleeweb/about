@@ -22,6 +22,7 @@ body {background:#000; color:#333; overflow-x:hidden;
                     align-items:center; 
                     li.videolist {margin:1rem; padding:2rem 0; list-style:none; text-align:center; outline:#555 dotted 0.1rem; cursor:pointer;
                         img {width:80%; margin-top:1rem;}
+                        img:hover {opacity:0.5; outline:#ff0 solid 0.1rem;}
                     }
                     li.videolist:hover {outline:#069 dotted 0.1rem;} 
                 }
@@ -30,15 +31,16 @@ body {background:#000; color:#333; overflow-x:hidden;
             p {margin:1rem auto; font-size:2rem; color:#789;}
             p.updated {font-size:1.2rem;
                 span.up {padding:0 0.5rem; position:absolute; right:0; top:-0.5rem; cursor:pointer; font-size:2.4rem}
+                span.up:hover {color:#069;}
             }
 
-            #collection {width:80%; max-width:120rem; outline:#333 dotted 0.1rem;
+            #collection {width:80%; max-width:120rem;
                 &.json {margin:2rem auto; padding: 1rem; text-align:center; line-height: 2rem; }
                 /*.videos {}*/
                 .name {font-size:2rem; margin:2rem auto; color:#fff;}
                 .videos {
                     .desc {position:relative; margin:1rem auto; color:#fff; font-size:2.4rem;}
-
+                    iframe#vscreen {outline:#ff0 dotted 0.1rem; padding:2rem;}
                     
                 
             }

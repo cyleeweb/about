@@ -44,6 +44,9 @@ body {
             body #videolib .main #hero ul#topnav li.videolist img {
               width: 80%;
               margin-top: 1rem; }
+            body #videolib .main #hero ul#topnav li.videolist img:hover {
+              opacity: 0.5;
+              outline: #ff0 solid 0.1rem; }
           body #videolib .main #hero ul#topnav li.videolist:hover {
             outline: #069 dotted 0.1rem; }
       body #videolib .main p {
@@ -59,10 +62,11 @@ body {
           top: -0.5rem;
           cursor: pointer;
           font-size: 2.4rem; }
+        body #videolib .main p.updated span.up:hover {
+          color: #069; }
       body #videolib .main #collection {
         width: 80%;
         max-width: 120rem;
-        outline: #333 dotted 0.1rem;
         /*.videos {}*/ }
         body #videolib .main #collection.json {
           margin: 2rem auto;
@@ -78,6 +82,9 @@ body {
           margin: 1rem auto;
           color: #fff;
           font-size: 2.4rem; }
+        body #videolib .main #collection .videos iframe#vscreen {
+          outline: #ff0 dotted 0.1rem;
+          padding: 2rem; }
       @media screen and (min-width: 320px) {
         body #videolib .main #hero ul#topnav li.videolist {
           width: 100%; }
