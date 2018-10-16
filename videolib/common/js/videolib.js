@@ -48,11 +48,11 @@ $(function() {
             var heroW = $("#hero").width(); //alert(heroW);
             //var iframeW = $("iframe#vscreen").width(); alert(iframeW);
             window.scrollTo(0, heroH);
-        });
 
-        $(".up").on("click", function(){
-            window.scrollTo(0, 0);
-            $("#collection").css("display","none");
+            $(".up").on("click", function(){
+                window.scrollTo(0, 0);
+                $("#collection").css("display","none");
+            });
         });
 
         // Hash in URL
