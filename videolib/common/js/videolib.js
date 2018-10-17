@@ -15,19 +15,25 @@ $(function() {
         $.each(Object.entries(arrEntries[0][1]), function(x, element) {
             //console.log(element); // VIDEOS
             topnav = 
-                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA + "'>" + Object.keys(arrEntries[0][1])[x] + 
-                "<br><img src='" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC + "'></img></li>"
+                "<li class='videolist' data='" + Object.entries(arrEntries[0][1])[x][1][0].DATA +
+                "'>" + Object.keys(arrEntries[0][1])[x] + 
+                "<br><img src='" + Object.entries(arrEntries[0][1])[x][1][0].IMGSRC +
+                "'></img></li>"
+                $(".videolist").attr("title", "Click to access the video.");
             //    
             $('#topnav').append(topnav); // MUST use append() method for this.
 
             collection = 
-                "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] + "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] + "</div>" +
-                "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC + "</div>" +
-                "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IFMSRC + " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
+                "<div class='videos off' id='" + Object.keys(arrEntries[0][1])[x] +
+                "'><div class='name'>" + Object.keys(arrEntries[0][1])[x] +
+                "</div>" +
+                "<div class='desc'>" + Object.entries(arrEntries[0][1])[x][1][0].DESC +
+                "</div>" + "<span class='up'><i class='fa fa-angle-double-up'></i></span>" +
+                "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IFMSRC +
+                " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
             //    
             $('#collection').append(collection); // MUST use append() method for this.
-            $(".videolist").attr("title", "Click to access the video.");
-
+           
             // For nav#topnav .videolist
             var fnVideos = function(DataId){
                 $(".videos").removeClass("on").addClass('off');
@@ -36,7 +42,7 @@ $(function() {
             
             // .videolist effect
             $(".videolist").on("mouseover mouseenter tap", function(){
-                $("#collection").css("display","block");
+                $("#iframe#vscreen").css("display","block");
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
@@ -51,7 +57,7 @@ $(function() {
 
             $(".up").on("click", function(){
                 window.scrollTo(0, 0);
-                $("#collection").css("display","none");
+                $("#iframe#vscreen").css("display","none");
             });
         });
 
