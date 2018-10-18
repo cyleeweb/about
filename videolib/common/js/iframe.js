@@ -1,5 +1,5 @@
 // Onload
 $(function() {
-    //alert("iframe on board!");
-    $(".iframe img").css("border","#f00 solid 1px");
+    alert("iframe on board!");
+    $("iframe").css("border","#f00 solid 10px");
 });

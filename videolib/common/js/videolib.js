@@ -40,9 +40,8 @@ $(function() {
                 $(DataId).removeClass("off").addClass("on");
             };
             
-            // .videolist effect
+            // For nav#topnav .videolist mouseover event
             $(".videolist").on("mouseover mouseenter tap", function(){
-                $("#iframe#vscreen").css("display","block");
                 var D = $(this).attr("data");
                 fnVideos(D);
             });
@@ -52,14 +51,15 @@ $(function() {
         $(".videolist").on("click", function(){
             var heroH = $("#hero").height(); //alert(heroH);
             var heroW = $("#hero").width(); //alert(heroW);
-            //var iframeW = $("iframe#vscreen").width(); alert(iframeW);
             window.scrollTo(0, heroH);
-
-            $(".up").on("click", function(){
-                window.scrollTo(0, 0);
-                $("#iframe#vscreen").css("display","none");
-            });
         });
+        
+        $(".up").on("click", function(){
+                window.scrollTo(0, 0);
+                //$("iframe").attr("src","");
+                M = $("#collection").detach(); // ???testing 101018
+                $(".main").append(M); 
+            });
 
         // Hash in URL
         if (location.hash != ""){
