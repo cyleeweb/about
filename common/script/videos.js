@@ -12,6 +12,8 @@ $(document).ready(function(){
 	var youtubeSrc2 = youtubePlayer + youtubeSrcArr[1] + youtubeParam;
 	var youtubeSrc3 = youtubePlayer + youtubeSrcArr[2] + youtubeParam;
 	var youtubeSrc4 = youtubePlayer + youtubeSrcArr[3] + youtubeParam;
+	var youtubeSrc5 = youtubePlayer + youtubeSrcArr[4] + youtubeParam;
+	var youtubeSrc6 = youtubePlayer + youtubeSrcArr[5] + youtubeParam;
 	// END YOUTUBE VIDEOS VARS
 
 	// BEGIN VIMEO VIDEOS VARS

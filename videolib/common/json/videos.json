@@ -44,51 +44,63 @@
         }],
         "Hightail-2": [{
             "DATA": "#Hightail-2",
-            "IFMSRC": "https://player.vimeo.com/video/80035927?badge=0",
-            "DESC": "Sony Pictures Televiion + Hightail",
+            "IFMSRC": "https://www.youtube.com/embed/zPX-AmKUnTY/?rel=0&amp;wmode=transparent",
+            "DESC": "Why Hightail",
             "IMGSRC": "./videos/hightail-2/screen.jpg"
         }],
         "Hightail-3": [{
             "DATA": "#Hightail-3",
-            "IFMSRC": "https://player.vimeo.com/video/80037332?badge=0",
-            "DESC": "Burt & Forman + Hightail",
+            "IFMSRC": "https://www.youtube.com/embed/8EWQpSLHRWA/?rel=0&amp;wmode=transparent",
+            "DESC": "Keep Your Ideas Moving",
             "IMGSRC": "./videos/hightail-3/screen.jpg"
         }],
         "Hightail-4": [{
             "DATA": "#Hightail-4",
-            "IFMSRC": "https://player.vimeo.com/video/80037005?badge=0",
-            "DESC": "Alabama Technology Network + Hightail",
+            "IFMSRC": "https://player.vimeo.com/video/80035927?badge=0",
+            "DESC": "Sony Pictures Television + Hightail",
             "IMGSRC": "./videos/hightail-4/screen.jpg"
         }],
         "Hightail-5": [{
             "DATA": "#Hightail-5",
-            "IFMSRC": "https://player.vimeo.com/video/52120891?badge=0",
-            "DESC": "Overview (YouSendIt)",
+            "IFMSRC": "https://player.vimeo.com/video/80037332?badge=0",
+            "DESC": "Burr & Forman + Hightail",
             "IMGSRC": "./videos/hightail-5/screen.jpg"
         }],
         "Hightail-6": [{
             "DATA": "#Hightail-6",
-            "IFMSRC": "https://player.vimeo.com/video/52120897?badge=0",
-            "DESC": "Send (YouSendIt)",
+            "IFMSRC": "https://player.vimeo.com/video/80037005?badge=0",
+            "DESC": "Alabama Technology Network + Hightail",
             "IMGSRC": "./videos/hightail-6/screen.jpg"
         }],
         "Hightail-7": [{
             "DATA": "#Hightail-7",
-            "IFMSRC": "https://player.vimeo.com/video/52120895?badge=0",
-            "DESC": "Share (YouSendIt)",
+            "IFMSRC": "https://player.vimeo.com/video/52120891?badge=0",
+            "DESC": "Overview (YouSendIt)",
             "IMGSRC": "./videos/hightail-7/screen.jpg"
         }],
         "Hightail-8": [{
             "DATA": "#Hightail-8",
-            "IFMSRC": "https://player.vimeo.com/video/52120893?badge=0",
-            "DESC": "Sync (YouSendIt)",
+            "IFMSRC": "https://player.vimeo.com/video/52120897?badge=0",
+            "DESC": "Send (YouSendIt)",
             "IMGSRC": "./videos/hightail-8/screen.jpg"
         }],
         "Hightail-9": [{
             "DATA": "#Hightail-9",
+            "IFMSRC": "https://player.vimeo.com/video/52120895?badge=0",
+            "DESC": "Share (YouSendIt)",
+            "IMGSRC": "./videos/hightail-9/screen.jpg"
+        }],
+        "Hightail-10": [{
+            "DATA": "#Hightail-10",
+            "IFMSRC": "https://player.vimeo.com/video/52120893?badge=0",
+            "DESC": "Sync (YouSendIt)",
+            "IMGSRC": "./videos/hightail-10/screen.jpg"
+        }],
+        "Hightail-11": [{
+            "DATA": "#Hightail-11",
             "IFMSRC": "https://player.vimeo.com/video/52120892?badge=0",
             "DESC": "Sign (YouSendIt)",
-            "IMGSRC": "./videos/hightail-9/screen.jpg"
+            "IMGSRC": "./videos/hightail-11/screen.jpg"
         }]
     },
     "DATE": { "date": "September 2018" }

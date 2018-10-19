@@ -5,7 +5,7 @@
 	<div id="themeControl-3" class="" title="Toggle Carousel Theme Three"></div>
 	
 	<select id='spahashpower'>
-		<option value="0" title="SPA HashTag Routing Power" selected="selected">SPA HashTag Routing Power</option>
+		<option value="0" title="HashTag Routing Power" selected="selected">HashTag Routing Power</option>
 	    <option value="#/exhibit/1" title="#/exhibit/1">#/exhibit/1</option>
 	    <option value="#/exhibit/2" title="#/exhibit/2">#/exhibit/2</option>
 	    <option value="#/exhibit/3" title="#/exhibit/3">#/exhibit/3</option>
@@ -18,7 +18,7 @@
 	</select>
 
 	<select id='entryqueries'>
-		<option value="0" title="SPA Entry Queries" selected="selected">SPA Entry Queries</option>
+		<option value="0" title="Entry Queries" selected="selected">Entry Queries</option>
 	    <option value="entry=home" title="entry=home">entry=home</option>
 	    <option value="entry=about" title="entry=about">entry=about</option>
 	    <option value="entry=galleries" title="entry=galleries">entry=galleries</option>
@@ -28,7 +28,7 @@
 	</select>
 	
 	<select id='javascript' title="Javascript">
-		<option value="0" title="Javascript Core Fundamentals" selected>JS Core Fundamentals</option>
+		<option value="0" title="Javascript Core" selected>Javascript Core</option>
 		<option value="1" title="Scope & Closure101">Scope & Closure101</option>
 		<option value="2" title="Scope & Closure102">Scope & Closure102</option>
 		<option value="3" title="cope & Closure103">Scope & Closure103</option>
@@ -38,24 +38,24 @@
 		<option value="7" title="Functional Programming">Functional Programming</option>
 		<option value="8" title="Constructors & Prototypes">Constructors & Prototypes</option>
 		<option value="9" title="Prototypal Inheritance">Prototypal Inheritance</option>
-		<option value="10" title="JSON via jQ.ajax()">JSON via JQ.ajax</option>
-		<option value="11" title="JSON via JS.XML.HttpRequest()">JSON via JS.XML.HttpRequest()</option>
+		<option value="10" title="JSON - jQ.ajax()">JSON - JQ.ajax</option>
+		<option value="11" title="JSON - JS.XML.HttpRequest()">JSON - JS.XML.HttpRequest()</option>
 	</select>
 
 	<select id='domtraversing' title="DOM Traversing">
 		<option value="0" title="DOM Traversing" selected>DOM Traversing</option>
 		<option value="1" title="Hosting Domain">Hosting Domain</option>
-		<option value="2" title="Document Character Type">Document Characer Type</option>
-		<option value="3" title="Document Title">Document Title</option>
-		<option value="4" title="Body Child Node Length">Body Child Node Length</option>
+		<option value="2" title="Doc. Character Type">Doc. Characer Type</option>
+		<option value="3" title="Doc. Title">Doc. Title</option>
+		<option value="4" title="Body Child Length">Body Child Length</option>
 		<option value="5" title="Body Attribute Length">Body Attribute Length</option>
-		<option value="6" title="Document Height">Document Height</option>
-		<option value="7" title="Document Width">Document Width</option>
-		<option value="8" title="Body Starting Top Position">Body Starting Top Position</option>
-		<option value="9" title="Body Starting Left Position">Body Starting Left Position</option>
+		<option value="6" title="Doc. Height">Doc. Height</option>
+		<option value="7" title="Doc. Width">Doc. Width</option>
+		<option value="8" title="Body Top Position">Body Top Position</option>
+		<option value="9" title="Body Left Position">Body Left Position</option>
 		<option value="10" title="Body Div Length">Body Div Length</option>
 		<option value="11" title="InnerHTML (Div Id='home')">InnerHTML (Div Id='home')</option>
-		<option value="12" title="Meta Info (Looping 'content')">Meta Info (Looping 'content')</option>
+		<option value="12" title="Meta (Looping 'content')">Meta (Looping 'content')</option>
 	</select>
 	
 	<div id="cl-guestbookapp" class="codelinks" title="SPA Guestbook App (PHP+MySQL)">
@@ -70,11 +70,16 @@
 		<a href="/mongolab/taskmanager/index.php" target="_blank">SPA REST App C (NonSQL Mongolab)</a>
 	</div>
 	
-	<div id="cl-ngjs" class="codelinks" title="SPA Responsive Cyleeweb Profile">
-		<a href="/ng/" target="_blank">SPA PHP+MySQL+AngularJS+Bootstrap</a>
+	<div id="cl-ngjs" class="codelinks" title="PHP+MySQL+AngularJS+Bootstrap">
+		<a href="/ng/" target="_blank">AngularJS+Bootstrap Cyleeweb Profile</a>
 	</div>
 
-	<div id="cl-ajax-responsive" class="codelinks " title="SPA Responsive Media Querry Galleries">
-		<a href="/gallery/responsive/" target="_blank">SPA PHP+MySQL+AJAX+Responsive</a>
+	<div id="cl-ajax-responsive" class="codelinks " title="PHP+MySQL+AJAX+Responsive">
+		<a href="/gallery/responsive/index.php" target="_blank">Media Querry Galleries</a>
 	</div>
+
+	<div id="cl-ajax-videolib" class="codelinks " title="Flex+JSON Videolib">
+		<a href="/videolib/index.html" target="_blank">Flex+JSON Videolib</a>
+	</div>
+	
 </div>

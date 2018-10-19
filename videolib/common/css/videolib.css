@@ -76,7 +76,6 @@ body {
         body #videolib .main #collection .videos span.up {
           padding: 0 0.5rem;
           position: absolute;
-          right: 0;
           top: 0;
           cursor: pointer;
           font-size: 2.4rem;
@@ -89,6 +88,8 @@ body {
     @media screen and (min-width: 320px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 100%; }
+      body #videolib #collection .videos span.up {
+        right: 0; }
       body #videolib #collection .videos iframe#vscreen {
         width: 72vw;
         height: 14.4rem;
@@ -96,6 +97,8 @@ body {
     @media screen and (min-width: 480px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 40%; }
+      body #videolib #collection .videos span.up {
+        right: 3%; }
       body #videolib #collection .videos iframe#vscreen {
         width: 76vw;
         height: 21.8rem;
@@ -103,6 +106,8 @@ body {
     @media screen and (min-width: 768px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 40%; }
+      body #videolib #collection .videos span.up {
+        right: 3%; }
       body #videolib #collection .videos iframe#vscreen {
         width: 78vw;
         height: 34.5rem;
@@ -110,6 +115,8 @@ body {
     @media screen and (min-width: 1024px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 25%; }
+      body #videolib #collection .videos span.up {
+        right: 2%; }
       body #videolib #collection .videos iframe#vscreen {
         width: 78vw;
         height: 46.08rem;
@@ -117,6 +124,8 @@ body {
     @media screen and (min-width: 1280px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 20%; }
+      body #videolib #collection .videos span.up {
+        right: 12%; }
       body #videolib #collection .videos iframe#vscreen {
         width: 80rem;
         height: 45rem;

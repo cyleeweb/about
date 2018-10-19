@@ -37,7 +37,7 @@ body {background:#000; color:#333; overflow-x:hidden;
                 .name {font-size:2rem; margin:2rem auto; color:#fff;}
                 .videos {
                     .desc {position:relative; margin:1rem auto; color:#fff; font-size:2.4rem;}
-                    span.up {padding:0 0.5rem; position:absolute; right:0; top:0; cursor:pointer; font-size:2.4rem; color:#f00;}
+                    span.up {padding:0 0.5rem; position:absolute; top:0; cursor:pointer; font-size:2.4rem; color:#f00;}
                     span.up:hover {color:#069;}
                     iframe#vscreen {outline:#069 dotted 0.1rem; padding:2rem;}
                 }
@@ -46,27 +46,42 @@ body {background:#000; color:#333; overflow-x:hidden;
         
         @media screen and (min-width:320px) {
             #hero ul#topnav li.videolist {width:100%;}
-            #collection .videos iframe#vscreen {width:72vw; height:14.4rem; margin:1rem auto;}
+            #collection .videos {
+                span.up {right:0;}
+                iframe#vscreen {width:72vw; height:14.4rem; margin:1rem auto;}
+            }
         }
 
         @media screen and (min-width:480px) {
             #hero ul#topnav li.videolist {width:40%;}
-            #collection .videos iframe#vscreen {width:76vw; height:21.8rem; margin:1rem auto;}
+            #collection .videos {
+                span.up {right:3%;}
+                iframe#vscreen {width:76vw; height:21.8rem; margin:1rem auto;}
+            }
         }
         
         @media screen and (min-width:768px) {
             #hero ul#topnav li.videolist {width:40%;}
-            #collection .videos iframe#vscreen {width:78vw; height:34.5rem; margin:1rem auto;}
+            #collection .videos {
+                span.up {right:3%;}
+            iframe#vscreen {width:78vw; height:34.5rem; margin:1rem auto;}
+            }
         }
 
         @media screen and (min-width:1024px) {
             #hero ul#topnav li.videolist {width:25%;}
-            #collection .videos iframe#vscreen {width:78vw; height:46.08rem; margin:1rem auto;}
+            #collection .videos {
+                span.up {right:2%;}
+                iframe#vscreen {width:78vw; height:46.08rem; margin:1rem auto;}
+            }
         }
 
         @media screen and (min-width:1280px) {
             #hero ul#topnav li.videolist {width:20%;}
-            #collection .videos iframe#vscreen {width:80rem; height:45rem; margin:1rem auto;}
+            #collection .videos {
+                span.up {right:12%;}
+                iframe#vscreen {width:80rem; height:45rem; margin:1rem auto;}
+            }
         }
     }
 }
