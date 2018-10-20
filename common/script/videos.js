@@ -7,28 +7,33 @@ $(document).ready(function(){
 	// BEGIN YOUTUBE VIDEOS VARS
 	var youtubePlayer ="https://www.youtube.com/embed/";
 	var youtubeParam = "/?rel=0&amp;wmode=transparent";
-	var youtubeSrcArr = new Array ("UI7B306CdoM","StF3bXCbtJ8","jj6wP62oqPo","o69Jo8vkkng","zPX-AmKUnTY","8EWQpSLHRWA");
-	var youtubeSrc1 = youtubePlayer + youtubeSrcArr[0] + youtubeParam;
-	var youtubeSrc2 = youtubePlayer + youtubeSrcArr[1] + youtubeParam;
-	var youtubeSrc3 = youtubePlayer + youtubeSrcArr[2] + youtubeParam;
-	var youtubeSrc4 = youtubePlayer + youtubeSrcArr[3] + youtubeParam;
-	var youtubeSrc5 = youtubePlayer + youtubeSrcArr[4] + youtubeParam;
-	var youtubeSrc6 = youtubePlayer + youtubeSrcArr[5] + youtubeParam;
+	var youtubeSrcArr = new Array ("UI7B306CdoM","StF3bXCbtJ8","jj6wP62oqPo","_he3cwFGFDc","wWynO77BDCE","bbJ4FGvS5EY","o69Jo8vkkng","zPX-AmKUnTY","8EWQpSLHRWA");
+
+	// ServiceNow videos below...
+	var youtubeSrc1 = youtubePlayer + youtubeSrcArr[0] + youtubeParam; // servicenow-1
+	var youtubeSrc2 = youtubePlayer + youtubeSrcArr[1] + youtubeParam; // servicenow-2
+	var youtubeSrc3 = youtubePlayer + youtubeSrcArr[2] + youtubeParam; // servicenow-3
+	var youtubeSrc4 = youtubePlayer + youtubeSrcArr[3] + youtubeParam; // servicenow-4
+	var youtubeSrc5 = youtubePlayer + youtubeSrcArr[4] + youtubeParam; // servicenow-5
+	var youtubeSrc6 = youtubePlayer + youtubeSrcArr[5] + youtubeParam; // servicenow-6
+	// Hitail videos below...
+	var youtubeSrc7 = youtubePlayer + youtubeSrcArr[6] + youtubeParam; // hightail-1
+	var youtubeSrc8 = youtubePlayer + youtubeSrcArr[7] + youtubeParam; // hightail-2
+	var youtubeSrc9 = youtubePlayer + youtubeSrcArr[8] + youtubeParam; // hightail-3
 	// END YOUTUBE VIDEOS VARS
 
 	// BEGIN VIMEO VIDEOS VARS
 	var vimeoPlayer ="https://player.vimeo.com/video/";
 	var vimeoParam = "?badge=0";
-	var vimeoSrcArr = new Array ("80035927","80037332","80037304","80037005","52120891","52120897","52120895","52120893","52120892");
-	var vimeoSrc1 = vimeoPlayer + vimeoSrcArr[0] + vimeoParam;
-	var vimeoSrc2 = vimeoPlayer + vimeoSrcArr[1] + vimeoParam;
-	var vimeoSrc3 = vimeoPlayer + vimeoSrcArr[2] + vimeoParam;
-	var vimeoSrc4 = vimeoPlayer + vimeoSrcArr[3] + vimeoParam;
-	var vimeoSrc5 = vimeoPlayer + vimeoSrcArr[4] + vimeoParam;
-	var vimeoSrc6 = vimeoPlayer + vimeoSrcArr[5] + vimeoParam;
-	var vimeoSrc7 = vimeoPlayer + vimeoSrcArr[6] + vimeoParam;
-	var vimeoSrc8 = vimeoPlayer + vimeoSrcArr[7] + vimeoParam;
-	var vimeoSrc9 = vimeoPlayer + vimeoSrcArr[8] + vimeoParam;
+	var vimeoSrcArr = new Array ("80035927","80037332","80037005","52120891","52120897","52120895","52120893","52120892");
+	var vimeoSrc1 = vimeoPlayer + vimeoSrcArr[0] + vimeoParam; // hightail-4
+	var vimeoSrc2 = vimeoPlayer + vimeoSrcArr[1] + vimeoParam; // hightail-5
+	var vimeoSrc3 = vimeoPlayer + vimeoSrcArr[2] + vimeoParam; // hightail-6
+	var vimeoSrc4 = vimeoPlayer + vimeoSrcArr[3] + vimeoParam; // hightail-7
+	var vimeoSrc5 = vimeoPlayer + vimeoSrcArr[4] + vimeoParam; // hightail-8
+	var vimeoSrc6 = vimeoPlayer + vimeoSrcArr[5] + vimeoParam; // hightail-9
+	var vimeoSrc7 = vimeoPlayer + vimeoSrcArr[6] + vimeoParam; // hightail-10
+	var vimeoSrc8 = vimeoPlayer + vimeoSrcArr[7] + vimeoParam; // hightail-11 ???
 	// END VIMEO VIDEOS VARS
 
 	// BGN AUTO FORWARD-PAUSE
@@ -69,6 +74,9 @@ $(document).ready(function(){
 		if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
 		if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
 		if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
+		if ($(this).attr('id') == 'youtubeVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc7);};
+		if ($(this).attr('id') == 'youtubeVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc8);};
+		if ($(this).attr('id') == 'youtubeVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc9);};
 		//
 		if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
 		if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
@@ -78,7 +86,6 @@ $(document).ready(function(){
 		if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
 		if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
 		if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-		if ($(this).attr('id') == 'vimeoVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc9);};
 		$(this).next().next().css('display','block');
 	});
 
@@ -114,6 +121,9 @@ $(document).ready(function(){
 			if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
 			if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
 			if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
+			if ($(this).attr('id') == 'youtubeVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc7);};
+			if ($(this).attr('id') == 'youtubeVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc8);};
+			if ($(this).attr('id') == 'youtubeVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc9);};
 			//
 			if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
 			if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
@@ -123,7 +133,6 @@ $(document).ready(function(){
 			if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
 			if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
 			if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-			if ($(this).attr('id') == 'vimeoVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc9);};
 			$(this).next().next().css('display','block');
 		});
 
@@ -170,7 +179,6 @@ $(document).ready(function(){
 				if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
 				if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
 				if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-				if ($(this).attr('id') == 'vimeoVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc9);};
 				$(this).next().next().css('display','block');
 			});
 

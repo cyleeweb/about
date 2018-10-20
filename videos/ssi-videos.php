@@ -53,11 +53,11 @@
                 <!-- /Slide3 -->
 
                 <!-- Slide4 -->
-                <div id="hightail-1" class="slides">
+                <div id="servicenow-4" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="youtubeVideo4">
-                        <h3>Hightail-1</h3>
-                        <h4>Before Hightail</h4>
+                        <h3>ServiceNow-4</h3>
+                        <h4>Major Incident Management</h4>
                         <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
                         </div>  
                         <div class="videoSrc"><iframe src='' width='500' height='282' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -67,11 +67,11 @@
                 <!-- /Slide4 -->
 
                 <!-- Slide5 -->
-                <div id="hightail-2" class="slides">
+                <div id="servicenow-5" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="youtubeVideo5">
-                        <h3>Hightail-2</h3>
-                        <h4>Why Hightail</h4>
+                        <h3>ServiceNow-5</h3>
+                        <h4>ServceNow Software Asset Management</h4>
                         <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
                         </div>  
                         <div class="videoSrc"><iframe src='' width='500' height='282' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
@@ -80,10 +80,52 @@
                 </div>   
                 <!-- /Slide5 -->
 
-                <!-- /Slide6-->
-                <div id="hightail-3" class="slides">
+                <!-- Slide6 -->
+                <div id="servicenow-6" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="youtubeVideo6">
+                        <h3>ServiceNow-6</h3>
+                        <h4>ServceNow IT Service Management</h4>
+                        <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
+                        </div>  
+                        <div class="videoSrc"><iframe src='' width='500' height='282' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                        <div class='close' title="Close video">X</div>
+                    </div>          
+                </div>   
+                <!-- /Slide6 -->
+
+                <!-- Slide7 -->
+                <div id="hightail-1" class="slides">
+                    <div class="videoWindows">
+                        <div class="videoDescrip" id="youtubeVideo7">
+                        <h3>Hightail-1</h3>
+                        <h4>Before Hightail</h4>
+                        <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
+                        </div>  
+                        <div class="videoSrc"><iframe src='' width='500' height='282' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                        <div class='close' title="Close video">X</div>
+                    </div>          
+                </div>   
+                <!-- /Slide7 -->
+
+                <!-- Slide8 -->
+                <div id="hightail-2" class="slides">
+                    <div class="videoWindows">
+                        <div class="videoDescrip" id="youtubeVideo8">
+                        <h3>Hightail-2</h3>
+                        <h4>Why Hightail</h4>
+                        <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
+                        </div>  
+                        <div class="videoSrc"><iframe src='' width='500' height='282' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>
+                        <div class='close' title="Close video">X</div>
+                    </div>          
+                </div>   
+                <!-- /Slide8 -->
+
+                <!-- /Slide9-->
+                <div id="hightail-3" class="slides">
+                    <div class="videoWindows">
+                        <div class="videoDescrip" id="youtubeVideo9">
                         <h3>Hightail-3</h3>
                         <h4>Keep Your Ideas Moving</h4>
                         <i class="fa fa-play-circle" style="font-size:30px; title="Play this video"></i>
@@ -92,9 +134,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide6 -->
+                <!-- /Slide9 -->
 
-                <!-- Slide7 -->
+                <!-- Slide10 -->
                 <div id="hightail-4" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo1">
@@ -106,9 +148,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide7 -->
+                <!-- /Slide10 -->
 
-                <!-- Slide8 -->
+                <!-- Slide11 -->
                 <div id="hightail-5" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo2">
@@ -120,9 +162,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide8 -->
+                <!-- /Slide11 -->
 
-                <!-- Slide9 -->
+                <!-- Slide12 -->
                 <div id="hightail-6" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo4">
@@ -134,9 +176,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide9 -->
+                <!-- /Slide12 -->
 
-                <!-- Slide10 -->
+                <!-- Slide13 -->
                 <div id="hightail-7" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo5">
@@ -148,9 +190,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide10 -->
+                <!-- /Slide13 -->
 
-                <!-- Slide11 -->
+                <!-- Slide14 -->
                 <div id="hightail-8" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo6">
@@ -162,9 +204,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide11 -->
+                <!-- /Slide14 -->
 
-                <!-- Slide12 -->
+                <!-- Slide15 -->
                 <div id="hightail-9" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo7">
@@ -176,9 +218,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide12 -->
+                <!-- /Slide15 -->
 
-                <!-- Slide13 -->
+                <!-- Slide16 -->
                 <div id="hightail-10" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo8">
@@ -190,9 +232,9 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide13 -->
+                <!-- /Slide16 -->
 
-                <!-- Slide14 -->
+                <!-- Slide17 -->
                 <div id="hightail-11" class="slides">
                     <div class="videoWindows">
                         <div class="videoDescrip" id="vimeoVideo9">
@@ -204,7 +246,7 @@
                         <div class='close' title="Close video">X</div>
                     </div>          
                 </div>   
-                <!-- /Slide14 -->      
+                <!-- /Slide17 -->      
             </div>
             <!-- /Slider -->
         </div>
