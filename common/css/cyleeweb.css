@@ -787,18 +787,12 @@ body, body#main {
     #categories #gadgets #getgeo {
       width: 20rem;
       min-height: 2rem;
-      border: #069 dotted 0.1rem;
+      border: #069;
       font: 1rem/1.2rem 'Noto Sans', sans-serif;
       color: #fff;
       text-align: center;
       cursor: pointer;
-      padding: 0.3rem 0.5rem;
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$clr-941506', endColorstr='$clr-d45a06', GradientType=0);
-      background: -moz-linear-gradient(top, #0c3b48 0%, #b0b0b0 100%);
-      background: -webkit-linear-gradient(top, #0c3b48 0%, #b0b0b0 100%);
-      background: -o-linear-gradient(top, #0c3b48 0%, #b0b0b0 100%);
-      background: -ms-linear-gradient(top, #0c3b48 0%, #b0b0b0 100%);
-      /*@include border-radius(0.4rem);*/ }
+      padding: 0.3rem 0.5rem; }
       #categories #gadgets #getgeo #location {
         color: #fff;
         display: block;
@@ -1646,6 +1640,18 @@ body, body#main {
     left: 0 !important; }
 
 /* Section Videos */
+#videos #videostitle span.videolib {
+  font-size: 1.2rem;
+  position: absolute;
+  right: -45rem;
+  top: 0.5rem;
+  font-size: bold; }
+  #videos #videostitle span.videolib a {
+    text-decoration: none;
+    padding: 0.3rem 0.5rem; }
+  #videos #videostitle span.videolib a:hover {
+    color: #00ff00 !important;
+    outline: #e0e0e0 dotted 0.1rem; }
 #videos #screen {
   width: 80rem;
   height: 34rem;

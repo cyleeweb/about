@@ -2,6 +2,7 @@
 	<!-- Videos Title -->
     <div id="videostitle" class="fontPoiretOne24 white sectitle">
         <?php  echo $sectitleVideos ?>
+        <span class="videolib"><a href="/videolib/index.html" target="_blank">Additional Version: Flex+JSON Videolib</a></span>
     </div>
     <!-- /Videos Title -->
 
