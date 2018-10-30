@@ -838,6 +838,7 @@ $(document).ready(function() {
             });
 
             //
+
             $("#modulesNavset-animation").bind("click tap", function() {
                 $("#modulesHome").fadeOut();
                 $("#modulesAnimation").fadeIn();
@@ -859,6 +860,151 @@ $(document).ready(function() {
                     fnFadeIn("div#cssAnimate", 500);
                     fnFadeIn("#animationScreenImg", 500);
                 });
+            });
+
+            /* REST Applications
+            $("#restApps").bind("change", function(){
+            	var n = $(this).val();
+            	if(n === "0") { // restApps
+            		$("#appsConsole").css("display","none");
+            	};
+            	if(n === "1") { // Comments
+            		fnAjax("/mysql/view-comments.php", "#appsConsole");
+            	};
+
+            	if(n === "2") { // Guestbook
+            		fnAjax("/mysql/console-guestbook.php", "#appsConsole");
+            	};
+            });
+            */
+
+            // JS Core Fundamentals
+            $("#javascript").bind("change", function() {
+                var n = $(this).val();
+                if (n === "0") { // JS Core
+                    $("#ajax-left").fadeOut(500, function() {
+                        window.scrollTo(0, 0);
+                    });
+                };
+                if (n === "1") {
+                    fnAjax("/protox/js/closures/closure-101.php", "#ajax-left");
+                };
+                if (n === "2") {
+                    fnAjax("/protox/js/closures/closure-102.php", "#ajax-left");
+                };
+                if (n === "3") {
+                    fnAjax("/protox/js/closures/closure-103.php", "#ajax-left");
+                };
+                if (n === "4") {
+                    fnAjax("/protox/js/closures/closure-factory.php", "#ajax-left");
+                };
+                if (n === "5") {
+                    fnAjax("/protox/js/cab/call-apply-bind.php", "#ajax-left");
+                };
+                if (n === "6") {
+                    fnAjax("/protox/js/callback/callbacks.php", "#ajax-left");
+                };
+                if (n === "7") {
+                    fnAjax("/protox/js/funcprogram/functional-programming.php", "#ajax-left");
+                };
+                if (n === "8") {
+                    fnAjax("/protox/js/fncons-proto/fncons-proto.php", "#ajax-left");
+                };
+                if (n === "9") {
+                    fnAjax("/protox/js/obj-create/obj-create.php", "#ajax-left");
+                };
+                if (n === "10") {
+                    fnAjax("/protox/js/json-ext/jq.php", "#ajax-left");
+                };
+                if (n === "11") {
+                    fnAjax("/protox/js/json-ext/js.php", "#ajax-left");
+                };
+            });
+
+            // SPA HashTag Routing Power
+            $("#spahashpower").bind("change", function() {
+                var gNone = "#orangebarTop nav, #gadgets > select:not(#spahashpower), #gadgets > div, .category";
+                var n = $(this).val();
+                var strURLi = window.location.href.split("#"); // split into array at #
+                var strPath = strURLi[0]; // take the 1st value of the array
+
+                switch (n) {
+                    case "#/exhibit/1":
+                        location.replace(strPath + "#/exhibit/1");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit1.php", "#hashpower");
+                        break;
+                    case "#/exhibit/2":
+                        location.replace(strPath + "#/exhibit/2");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit2.php", "#hashpower");
+                        break;
+                    case "#/exhibit/3":
+                        location.replace(strPath + "#/exhibit/3");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit3.php", "#hashpower");
+                        break;
+                    case "#/exhibit/4":
+                        location.replace(strPath + "#/exhibit/4");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit4.php", "#hashpower");
+                        break;
+                    case "#/exhibit/5":
+                        location.replace(strPath + "#/exhibit/5");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit5.php", "#hashpower");
+                        break;
+                    case "#/exhibit/6":
+                        location.replace(strPath + "#/exhibit/6");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit6.php", "#hashpower");
+                        break;
+                    case "#/exhibit/7":
+                        location.replace(strPath + "#/exhibit/7");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit7.php", "#hashpower");
+                        break;
+                    case "#/exhibit/8":
+                        location.replace(strPath + "#/exhibit/8");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibit8.php", "#hashpower");
+                        break;
+                    case "#/exhibit/all":
+                        location.replace(strPath + "#/exhibit/all");
+                        fnAddClass(gNone, "g-none");
+                        fnAjax("/gallery/aj-hash-exhibits-union.php", "#hashpower");
+                        break;
+                }
+            });
+
+            // Query String Entries
+            $("#entryqueries").bind("change", function() {
+                var n = $(this).val();
+                var strURLi = window.location.href.split("?"); // split into array at ?
+                var strSplit = strURLi[0]; // take the 1st value of the array
+                var strHref = strSplit.split("#"); // split into array at #
+                var strPath = strHref[0]; // take the 1st value of the array
+
+                switch (n) {
+                    case "entry=home":
+                        location.replace(strPath + "?entry=home");
+                        break;
+                    case "entry=about":
+                        location.replace(strPath + "?entry=about");
+                        break;
+                    case "entry=galleries":
+                        location.replace(strPath + "?entry=galleries");
+                        break;
+                    case "entry=samples":
+                        location.replace(strPath + "?entry=samples");
+                        break;
+                    case "entry=modules":
+                        location.replace(strPath + "?entry=modules");
+                        break;
+                    case "entry=videos":
+                        location.replace(strPath + "?entry=videos");
+                        break;
+                }
             });
 
             // DOM Traversing
@@ -919,158 +1065,6 @@ $(document).ready(function() {
                         break;
                 }
                 $(this).val("0");
-            });
-
-            // JS Core Fundamentals
-            $("#javascript").bind("change", function() {
-                var n = $(this).val();
-                if (n === "0") { // JS Core
-                    $("#ajax-left").fadeOut(500, function() {
-                        window.scrollTo(0, 0);
-                    });
-                };
-                if (n === "1") {
-                    fnAjax("/protox/js/closures/closure-101.php", "#ajax-left");
-                };
-                if (n === "2") {
-                    fnAjax("/protox/js/closures/closure-102.php", "#ajax-left");
-                };
-                if (n === "3") {
-                    fnAjax("/protox/js/closures/closure-103.php", "#ajax-left");
-                };
-                if (n === "4") {
-                    fnAjax("/protox/js/closures/closure-factory.php", "#ajax-left");
-                };
-                if (n === "5") {
-                    fnAjax("/protox/js/cab/call-apply-bind.php", "#ajax-left");
-                };
-                if (n === "6") {
-                    fnAjax("/protox/js/callback/callbacks.php", "#ajax-left");
-                };
-                if (n === "7") {
-                    fnAjax("/protox/js/funcprogram/functional-programming.php", "#ajax-left");
-                };
-                if (n === "8") {
-                    fnAjax("/protox/js/fncons-proto/fncons-proto.php", "#ajax-left");
-                };
-                if (n === "9") {
-                    fnAjax("/protox/js/obj-create/obj-create.php", "#ajax-left");
-                };
-                if (n === "10") {
-                    fnAjax("/protox/js/json-ext/jq.php", "#ajax-left");
-                };
-                if (n === "11") {
-                    fnAjax("/protox/js/json-ext/js.php", "#ajax-left");
-                };
-            });
-
-            // Entrie Queries
-            $("#spaentryqueries").bind("change", function() {
-                var n = $(this).val();
-                var strURLi = window.location.href.split("?"); // split into array at ?
-                var strSplit = strURLi[0]; // take the 1st value of the array
-                var strHref = strSplit.split("#"); // split into array at #
-                var strPath = strHref[0]; // take the 1st value of the array
-
-                switch (n) {
-                    case "entry=home":
-                        location.replace(strPath + "?entry=home");
-                        break;
-                    case "entry=about":
-                        location.replace(strPath + "?entry=about");
-                        break;
-                    case "entry=galleries":
-                        location.replace(strPath + "?entry=galleries");
-                        break;
-                    case "entry=samples":
-                        location.replace(strPath + "?entry=samples");
-                        break;
-                    case "entry=modules":
-                        location.replace(strPath + "?entry=modules");
-                        break;
-                    case "entry=videos":
-                        location.replace(strPath + "?entry=videos");
-                        break;
-                }
-            });
-
-            // SPA HashTag Routing Power
-            $("#spahashpower").bind("change", function() {
-                var gNone = "#orangebarTop nav, #gadgets > select:not(#spahashpower), #gadgets > div, .category";
-                var n = $(this).val();
-                var strURLi = window.location.href.split("#"); // split into array at #
-                var strPath = strURLi[0]; // take the 1st value of the array
-
-                switch (n) {
-                    case "#/exhibit/1":
-                        location.replace(strPath + "#/exhibit/1");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit1.php", "#hashpower");
-                        break;
-                    case "#/exhibit/2":
-                        location.replace(strPath + "#/exhibit/2");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit2.php", "#hashpower");
-                        break;
-                    case "#/exhibit/3":
-                        location.replace(strPath + "#/exhibit/3");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit3.php", "#hashpower");
-                        break;
-                    case "#/exhibit/4":
-                        location.replace(strPath + "#/exhibit/4");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit4.php", "#hashpower");
-                        break;
-                    case "#/exhibit/5":
-                        location.replace(strPath + "#/exhibit/5");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit5.php", "#hashpower");
-                        break;
-                    case "#/exhibit/6":
-                        location.replace(strPath + "#/exhibit/6");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit6.php", "#hashpower");
-                        break;
-                    case "#/exhibit/7":
-                        location.replace(strPath + "#/exhibit/7");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit7.php", "#hashpower");
-                        break;
-                    case "#/exhibit/8":
-                        location.replace(strPath + "#/exhibit/8");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibit8.php", "#hashpower");
-                        break;
-                    case "#/exhibit/all":
-                        location.replace(strPath + "#/exhibit/all");
-                        fnAddClass(gNone, "g-none");
-                        fnAjax("/gallery/aj-hash-exhibits-union.php", "#hashpower");
-                        break;
-                }
-            });
-
-            // SPA Rest Apps (WIP)
-            $("#sparestapps").bind("change", function() {
-                var n = $(this).val();
-
-                function openBlank(url) {
-                    var win = window.open(url, '_blank');
-                    win.focus();
-                  }
-               
-                switch (n) {
-                    case "0":
-                        break;
-                    case "1":
-                        openBlank('/mysql/console-guestbook.php');
-                        break;
-                    case "2":
-                        openBlank('/mongolab/bookstore/index.php');
-                    case "3":
-                        openBlank('/mongolab/taskmanager/index.php');
-                        break;
-                }
             });
 
             //

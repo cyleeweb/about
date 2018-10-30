@@ -18,8 +18,8 @@
         #themeControl-2 {background:url(/images/switch1-quad.gif) no-repeat 0 -4.8rem; width:2.4rem; height:2.4rem; cursor:pointer; border-radius:$bdr-radius50; margin-right:1rem;}
         #themeControl-3 {background:url(/images/switch1-quad.gif) no-repeat 0 -7.2rem; width:2.4rem; height:2.4rem; cursor:pointer; border-radius:$bdr-radius50; margin-right:1rem;}
         /*#dimmerSwitch {background:url(/images/switch1-quad.gif) no-repeat 0 -9.6rem; width:2.4rem; height:2.4rem; cursor:pointer;}*/
-        #spahashpower, #entryqueries, #restApps, #javascript, #domtraversing {font:normal 1rem/1.2rem 'Noto Sans', san-sarif; color:$clr-fff; padding:2px; margin:1px 1rem; background:#000;}
-		#spahashpower:hover, #entryqueries:hover, #restApps:hover, #javascript:hover, #domtraversing:hover{background:#069;}
+        #spahashpower, #spaentryqueries, #javascript, #domtraversing, #sparestapps {font:normal 1rem/1.2rem 'Noto Sans', san-sarif; color:$clr-fff; padding:2px; margin:1px 1rem; background:#000;}
+		#spahashpower:hover, #spaentryqueries:hover, #javascript:hover, #domtraversing:hover, #sparestapps:hover {background:#069;}
         .codelinks {height:2.2rem; color:$clr-fff; background-color:#000;text-align:center; padding:0.5rem 1rem; margin:0 0.5rem; border:$clr-fff solid 0.1rem /*filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='$clr-941506', endColorstr='$clr-d45a06', GradientType=0); @include background($linear2); @include border-radius(0.4rem);*/}
         .codelinks:hover {background:#069; /*border:$clr-fff dotted 0.1rem;*/}
         .codelinks a {color:$clr-fff;}
