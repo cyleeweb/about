@@ -1063,12 +1063,12 @@ $(document).ready(function() {
                     case "0":
                         break;
                     case "1":
-                        openBlank('/mysql/console-guestbook.php');
+                        openBlank('/login/index.php');
                         break;
                     case "2":
-                        openBlank('/mongolab/bookstore/index.php');
+                        openBlank('/login/index.php');
                     case "3":
-                        openBlank('/mongolab/taskmanager/index.php');
+                        openBlank('/login/index.php');
                         break;
                 }
             });
