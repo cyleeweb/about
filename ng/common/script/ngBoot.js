@@ -104,7 +104,7 @@ $(document).ready(function(){
 });
 
 /*************************************** JQuery ***************************************/
-
+// Section's lazy loading...
 $(document).ready(function(){
 
 	$('#ngboot').fadeIn(2000);
@@ -113,7 +113,9 @@ $(document).ready(function(){
 		scrollTop: 0
 	}, "fast");
 	//return false;
-    var DocH = $(document).height(); console.log("DocH: " + DocH);
+	var DocH = $(document).height(); console.log("DocH: " + DocH);
+	var WinH = $(window).height(); console.log("WinH: " + WinH);
+	
     //console.log($("body").find(".track").length);
 
     var track0H = $(".track:eq(0)").height(); console.log("track0H#about: " + track0H); // #about
@@ -124,7 +126,7 @@ $(document).ready(function(){
     //
     var trackTH = track0H + track1H + track2H + track3H + track4H; console.log("trackTH: " + trackTH);
     var FTop = 150; console.log("FTop: " + FTop);
-    var Fac = 300; console.log("Fac: " + Fac); // The gap between this and next div.
+    var Fac = WinH/5; console.log("Fac: " + Fac); // The gap before reaching next div (approx less-than 200px for 1000px winH seems sufficient).
 
     var ScrA = FTop + Fac; console.log ("ScrA: " + ScrA);
     var ScrB = ScrA + track1H; console.log ("ScrB: " + ScrB);
@@ -134,16 +136,19 @@ $(document).ready(function(){
 	// ScrollTop 
 	$(document).scroll(function() {
         if ($(document).scrollTop() >= ScrA) {
-            $('.track:eq(1)').fadeIn(2000); // #recommend in
-        }
-        if ($(document).scrollTop() >= ScrB) {
-            $('.track:eq(2)').fadeIn(2000); // #galleries in
-        }
-        if ($(document).scrollTop() >= ScrC) {
-            $('.track:eq(3)').fadeIn(2000); // #samples in
-        }
-        if ($(document).scrollTop() >= ScrD) {
-            $('.track:eq(4)').fadeIn(2000); // #contact in
+			$('.track:eq(1)').fadeIn(2000); // #recommend in
+
+			if ($(document).scrollTop() >= ScrB) {
+				$('.track:eq(2)').fadeIn(2000); // #galleries in
+
+				if ($(document).scrollTop() >= ScrC) {
+					$('.track:eq(3)').fadeIn(2000); // #samples in
+
+					if ($(document).scrollTop() >= ScrD) {
+						$('.track:eq(4)').fadeIn(2000); // #contact in
+					}
+				}
+			}
         }
 	});
 

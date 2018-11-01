@@ -12,7 +12,7 @@
 		<!-- My Information -->
 		<div id="myinfo" class="col-lg-12 text-center clearfix clear">
 			<span class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
-				<img id="photo" class="img-circle" src="/images/cylee-new1.jpg" width="50" height="50" title="Thank you for visiting!">
+				<img id="photo" class="img-circle" src="/images/cylee-2018.jpg" width="50" height="50" title="Thank you for visiting!">
 			</span>
 			<span class="col-xs-12 col-sm-6 col-md-4 col-lg-4 fontRaleway12 glyphicon glyphicon-envelope"> LinkedIn<br>
 				<a href="{{siteVars.cyleeLinkedIn}}" target="_blank" title="LinkedIn Profile" ng-bind="siteVars.cyleeLinkedIn"></a>
