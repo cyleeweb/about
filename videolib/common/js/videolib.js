@@ -9,7 +9,7 @@ $(function() {
         var jsonDate = json.DATE.date;
         //console.log(json); // {VIDEOS: {…},DATE: {…}}
 
-        $("#updatedversion").text(jsonDate);
+        $("#updatedversion").append(jsonDate);
 
         //+ Method JQ each() approach looping thru 'arrEntries'
         $.each(Object.entries(arrEntries[0][1]), function(x, element) {
@@ -32,34 +32,30 @@ $(function() {
                 "<iframe id='vscreen' src=" + Object.entries(arrEntries[0][1])[x][1][0].IFMSRC +
                 " frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>"
             //    
-            $('#collection').append(collection); // MUST use append() method for this.
-           
-            // For nav#topnav .videolist
-            var fnVideos = function(DataId){
-                $(".videos").removeClass("on").addClass('off');
-                $(DataId).removeClass("off").addClass("on");
-            };
-            
-            // For nav#topnav .videolist mouseover event
-            $(".videolist").on("mouseover mouseenter tap", function(){
-                var D = $(this).attr("data");
-                fnVideos(D);
-            });
+            $('#collection').prepend(collection); // MUST use prepend() method for this.
         });
         //- Method JQ each() approach looping thru 'arrEntries'
 
         $(".videolist").on("click", function(){
             var heroH = $("#hero").height(); //alert(heroH);
             var heroW = $("#hero").width(); //alert(heroW);
-            window.scrollTo(0, heroH);
+            // window.scrollTo(0, heroH); 
+            $("#collection").fadeIn(500);
+
+            var fnVideos = function(DataId){
+                $(".videos").removeClass("on").addClass('off');
+                $(DataId).removeClass("off").addClass("on");
+            };
+            var D = $(this).attr("data");
+                fnVideos(D);
         });
         
         $(".up").on("click", function(){
                 window.scrollTo(0, 0);
-                //$("iframe").attr("src","");
-                M = $("#collection").detach(); // ???testing 101018
+                //$("iframe").attr("src",""); //?
+                M = $("#collection").detach().fadeOut(); // Or M = $("#collection").detach().fadeOut();
                 $(".main").append(M); 
-            });
+        });
 
         // Hash in URL
         if (location.hash != ""){

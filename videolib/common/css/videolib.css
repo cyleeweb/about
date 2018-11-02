@@ -20,9 +20,14 @@ body {
       display: none; }
     body #videolib .main {
       width: 100%;
-      margin: 0 auto 0 0; }
+      margin: 0 auto; }
+      body #videolib .main #backdrop {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.8; }
       body #videolib .main #hero {
-        width: 96%;
         color: #fff;
         margin: 0 auto;
         padding: 2rem; }
@@ -40,15 +45,16 @@ body {
             list-style: none;
             text-align: center;
             outline: #555 dotted 0.1rem;
-            cursor: pointer; }
+            cursor: pointer;
+            opacity: 0.5; }
             body #videolib .main #hero ul#topnav li.videolist img {
               width: 80%;
               margin-top: 1rem; }
             body #videolib .main #hero ul#topnav li.videolist img:hover {
-              opacity: 0.5;
               outline: #ff0 solid 0.1rem; }
           body #videolib .main #hero ul#topnav li.videolist:hover {
-            outline: #069 dotted 0.1rem; }
+            outline: #069 dotted 0.1rem;
+            opacity: 1; }
       body #videolib .main p {
         margin: 1rem auto;
         font-size: 2rem;
@@ -56,17 +62,19 @@ body {
       body #videolib .main p.updated {
         font-size: 1.2rem; }
       body #videolib .main #collection {
-        width: 80%;
-        max-width: 120rem;
+        outline: #069 dotted 1px;
+        position: fixed;
+        top: 0;
+        background: #000;
+        display: none;
         /*.videos {}*/ }
         body #videolib .main #collection.json {
-          margin: 2rem auto;
-          padding: 1rem;
+          padding: 5rem 0;
           text-align: center;
           line-height: 2rem; }
         body #videolib .main #collection .name {
           font-size: 2rem;
-          margin: 2rem auto;
+          margin: 1rem auto;
           color: #fff; }
         body #videolib .main #collection .videos .desc {
           position: relative;
@@ -83,52 +91,66 @@ body {
         body #videolib .main #collection .videos span.up:hover {
           color: #069; }
         body #videolib .main #collection .videos iframe#vscreen {
-          outline: #069 dotted 0.1rem;
           padding: 2rem; }
     @media screen and (min-width: 320px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 100%; }
-      body #videolib #collection .videos span.up {
-        right: 0; }
-      body #videolib #collection .videos iframe#vscreen {
-        width: 72vw;
-        height: 14.4rem;
-        margin: 1rem auto; } }
+      body #videolib #collection {
+        width: 100%;
+        height: 100%; }
+        body #videolib #collection .videos span.up {
+          right: 2rem; }
+        body #videolib #collection .videos iframe#vscreen {
+          width: 80vw;
+          height: 45vw;
+          margin: 1rem auto; } }
     @media screen and (min-width: 480px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 40%; }
-      body #videolib #collection .videos span.up {
-        right: 3%; }
-      body #videolib #collection .videos iframe#vscreen {
-        width: 76vw;
-        height: 21.8rem;
-        margin: 1rem auto; } }
+      body #videolib #collection {
+        width: 100%;
+        height: 100%; }
+        body #videolib #collection .videos span.up {
+          right: 2rem; }
+        body #videolib #collection .videos iframe#vscreen {
+          width: 80vw;
+          height: 45vw;
+          margin: 1rem auto; } }
     @media screen and (min-width: 768px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 40%; }
-      body #videolib #collection .videos span.up {
-        right: 3%; }
-      body #videolib #collection .videos iframe#vscreen {
-        width: 78vw;
-        height: 34.5rem;
-        margin: 1rem auto; } }
+      body #videolib #collection {
+        width: 100%;
+        height: 100%; }
+        body #videolib #collection .videos span.up {
+          right: 10rem; }
+        body #videolib #collection .videos iframe#vscreen {
+          width: 80vw;
+          height: 45vw;
+          margin: 1rem auto; } }
     @media screen and (min-width: 1024px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 25%; }
-      body #videolib #collection .videos span.up {
-        right: 2%; }
-      body #videolib #collection .videos iframe#vscreen {
-        width: 78vw;
-        height: 46.08rem;
-        margin: 1rem auto; } }
+      body #videolib #collection {
+        width: 100%;
+        height: 100%; }
+        body #videolib #collection .videos span.up {
+          right: 10rem; }
+        body #videolib #collection .videos iframe#vscreen {
+          width: 80vw;
+          height: 45vw;
+          margin: 1rem auto; } }
     @media screen and (min-width: 1280px) {
       body #videolib #hero ul#topnav li.videolist {
         width: 20%; }
-      body #videolib #collection .videos span.up {
-        right: 12%; }
-      body #videolib #collection .videos iframe#vscreen {
-        width: 80rem;
-        height: 45rem;
-        margin: 1rem auto; } }
+      body #videolib #collection {
+        width: 100%;
+        height: 100%; }
+        body #videolib #collection .videos span.up {
+          right: 10rem; }
+        body #videolib #collection .videos iframe#vscreen {
+          width: 80rem;
+          height: 45rem;
+          margin: 1rem auto; } }
 
 /*# sourceMappingURL=videolib.css.map */
