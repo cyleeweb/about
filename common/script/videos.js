@@ -16,6 +16,7 @@ $(document).ready(function(){
 	var youtubeSrc4 = youtubePlayer + youtubeSrcArr[3] + youtubeParam; // servicenow-4
 	var youtubeSrc5 = youtubePlayer + youtubeSrcArr[4] + youtubeParam; // servicenow-5
 	var youtubeSrc6 = youtubePlayer + youtubeSrcArr[5] + youtubeParam; // servicenow-6
+	
 	// Hitail videos below...
 	var youtubeSrc7 = youtubePlayer + youtubeSrcArr[6] + youtubeParam; // hightail-1
 	var youtubeSrc8 = youtubePlayer + youtubeSrcArr[7] + youtubeParam; // hightail-2
@@ -26,6 +27,8 @@ $(document).ready(function(){
 	var vimeoPlayer ="https://player.vimeo.com/video/";
 	var vimeoParam = "?badge=0";
 	var vimeoSrcArr = new Array ("80035927","80037332","80037005","52120891","52120897","52120895","52120893","52120892");
+
+	// Hitail videos below...
 	var vimeoSrc1 = vimeoPlayer + vimeoSrcArr[0] + vimeoParam; // hightail-4
 	var vimeoSrc2 = vimeoPlayer + vimeoSrcArr[1] + vimeoParam; // hightail-5
 	var vimeoSrc3 = vimeoPlayer + vimeoSrcArr[2] + vimeoParam; // hightail-6
@@ -46,7 +49,7 @@ $(document).ready(function(){
             $(this).css({left:0});
         })
 
-    }, 3000);
+    }, 2500);
     // END CAROUSEL AUTO SLIDER WITH VARS
 
 		$("#slider").addClass("autoslide");	
@@ -66,30 +69,30 @@ $(document).ready(function(){
 	// END HOVER VIDEO DESCRIPTION
 
 	// BGN PLAY VIDEO	
-	$(".videoDescrip").bind("click", function(){
-		$("#slider").removeClass("autoslide");
-		if ($(this).attr('id') == 'youtubeVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc1);};
-		if ($(this).attr('id') == 'youtubeVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc2);};
-		if ($(this).attr('id') == 'youtubeVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc3);};
-		if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
-		if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
-		if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
-		if ($(this).attr('id') == 'youtubeVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc7);};
-		if ($(this).attr('id') == 'youtubeVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc8);};
-		if ($(this).attr('id') == 'youtubeVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc9);};
-		//
-		if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
-		if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
-		if ($(this).attr('id') == 'vimeoVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc3);};		
-		if ($(this).attr('id') == 'vimeoVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc4);};
-		if ($(this).attr('id') == 'vimeoVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc5);};
-		if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
-		if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
-		if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-		$(this).next().next().css('display','block');
-	});
+	var BgnPlayVdo = $(".videoDescrip").bind("click", function(){
+			$("#slider").removeClass("autoslide");
+			if ($(this).attr('id') == 'youtubeVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc1);};
+			if ($(this).attr('id') == 'youtubeVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc2);};
+			if ($(this).attr('id') == 'youtubeVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc3);};
+			if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
+			if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
+			if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
+			if ($(this).attr('id') == 'youtubeVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc7);};
+			if ($(this).attr('id') == 'youtubeVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc8);};
+			if ($(this).attr('id') == 'youtubeVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc9);};
+			//
+			if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
+			if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
+			if ($(this).attr('id') == 'vimeoVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc3);};		
+			if ($(this).attr('id') == 'vimeoVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc4);};
+			if ($(this).attr('id') == 'vimeoVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc5);};
+			if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
+			if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
+			if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
+			$(this).next().next().css('display','block');
+		});
 
-
+	BgnPlayVdo;
 
 	$(".close").bind("click", function(){
 		$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "")
@@ -113,28 +116,7 @@ $(document).ready(function(){
 		// END HOVER VIDEO DESCRIPTION
 
 		// BGN PLAY VIDEO
-		$(".videoDescrip").bind("click", function(){
-			$("#slider").removeClass("autoslide");				
-			if ($(this).attr('id') == 'youtubeVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc1);};
-			if ($(this).attr('id') == 'youtubeVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc2);};
-			if ($(this).attr('id') == 'youtubeVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc3);};
-			if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
-			if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
-			if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
-			if ($(this).attr('id') == 'youtubeVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc7);};
-			if ($(this).attr('id') == 'youtubeVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc8);};
-			if ($(this).attr('id') == 'youtubeVideo9') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc9);};
-			//
-			if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
-			if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
-			if ($(this).attr('id') == 'vimeoVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc3);};
-			if ($(this).attr('id') == 'vimeoVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc4);};
-			if ($(this).attr('id') == 'vimeoVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc5);};
-			if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
-			if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
-			if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-			$(this).next().next().css('display','block');
-		});
+		BgnPlayVdo;;
 
 		$(".close").bind("click", function(){
 			$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "");
@@ -162,25 +144,7 @@ $(document).ready(function(){
 			// END HOVER VIDEO DESCRIPTION
 
 			// BGN PLAY VIDEO
-			$(".videoDescrip").bind("click", function(){
-				$("#slider").removeClass("autoslide");
-				if ($(this).attr('id') == 'youtubeVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc1);};
-				if ($(this).attr('id') == 'youtubeVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc2);};
-				if ($(this).attr('id') == 'youtubeVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc3);};
-				if ($(this).attr('id') == 'youtubeVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc4);};
-				if ($(this).attr('id') == 'youtubeVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc5);};
-				if ($(this).attr('id') == 'youtubeVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc6);};
-				//
-				if ($(this).attr('id') == 'vimeoVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc1);};
-				if ($(this).attr('id') == 'vimeoVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc2);};
-				if ($(this).attr('id') == 'vimeoVideo3') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc3);};
-				if ($(this).attr('id') == 'vimeoVideo4') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc4);};
-				if ($(this).attr('id') == 'vimeoVideo5') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc5);};
-				if ($(this).attr('id') == 'vimeoVideo6') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc6);};
-				if ($(this).attr('id') == 'vimeoVideo7') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc7);};
-				if ($(this).attr('id') == 'vimeoVideo8') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', vimeoSrc8);};
-				$(this).next().next().css('display','block');
-			});
+			BgnPlayVdo;
 
 			$(".close").bind("click", function(){
 				$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "")
