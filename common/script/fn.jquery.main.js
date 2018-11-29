@@ -6,8 +6,8 @@ $(document).ready(function() {
     "use strict";
 
     // Added 090318 for http => https
-    var protocol = window.location.protocol;
-    if (protocol.includes("https")) {
+    var protohttps = window.location.protocol;
+    if (protohttps.includes("https") == true) {
         console.log("secure-https-true!");
     } else {
         var href = window.location.href;

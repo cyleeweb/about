@@ -69,7 +69,7 @@ $(document).ready(function(){
 	// END HOVER VIDEO DESCRIPTION
 
 	// BGN PLAY VIDEO	
-	var BgnPlayVdo = $(".videoDescrip").bind("click", function(){
+	var fnPlayVideo = $(".videoDescrip").bind("click", function(){
 			$("#slider").removeClass("autoslide");
 			if ($(this).attr('id') == 'youtubeVideo1') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc1);};
 			if ($(this).attr('id') == 'youtubeVideo2') {$(this).css('display','none').next().css('display','block').find("iframe").attr('src', youtubeSrc2);};
@@ -92,7 +92,7 @@ $(document).ready(function(){
 			$(this).next().next().css('display','block');
 		});
 
-	BgnPlayVdo;
+	fnPlayVideo;
 
 	$(".close").bind("click", function(){
 		$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "")
@@ -116,7 +116,7 @@ $(document).ready(function(){
 		// END HOVER VIDEO DESCRIPTION
 
 		// BGN PLAY VIDEO
-		BgnPlayVdo;;
+		fnPlayVideo;;
 
 		$(".close").bind("click", function(){
 			$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "");
@@ -144,7 +144,7 @@ $(document).ready(function(){
 			// END HOVER VIDEO DESCRIPTION
 
 			// BGN PLAY VIDEO
-			BgnPlayVdo;
+			fnPlayVideo;
 
 			$(".close").bind("click", function(){
 				$(this).css('display','none').prev().css('display','none').find("iframe").attr('src', "")
