@@ -1,8 +1,0 @@
-/* BGN import *.css */
-@import url(../global/css/_reset.css);
-@import url(../global/css/_global.css);
-/* EOD import *.css */
-.iframe img {
-  cursor: pointer; }
-
-/*# sourceMappingURL=iframe.css.map */

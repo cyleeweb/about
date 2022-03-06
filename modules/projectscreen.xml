@@ -1,8 +1,0 @@
-<?xml version = "1.0" encoding="utf-8"?>
-<projectscreen>
-	<screen1>/modules/images/projectscreen1-fruits.jpg</screen1> 
-	<screen2>/modules/images/projectscreen2-fruits.jpg</screen2> 
-	<screen3>/modules/images/projectscreen3-fruits.jpg</screen3> 
-	<screen4>/modules/images/projectscreen4-fruits.jpg</screen4>
-	<screen5>/modules/images/projectscreen5-fruits.jpg</screen5>
-</projectscreen>
